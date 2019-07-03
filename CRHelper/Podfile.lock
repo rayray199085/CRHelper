@@ -1,0 +1,67 @@
+PODS:
+  - AAInfographics (2.0.4)
+  - Alamofire (4.8.2)
+  - AlamofireNetworkActivityIndicator (2.4.0):
+    - Alamofire (~> 4.8)
+  - Atributika (4.8.2)
+  - DropDown (2.3.13)
+  - FBRetainCycleDetector (0.1.4)
+  - MLeaksFinder (1.0.0):
+    - FBRetainCycleDetector
+  - pop (1.0.12)
+  - SDWebImage (5.0.2):
+    - SDWebImage/Core (= 5.0.2)
+  - SDWebImage/Core (5.0.2)
+  - SVProgressHUD (2.2.5)
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - AAInfographics (from `https://github.com/AAChartModel/AAChartKit-Swift.git`)
+  - Alamofire
+  - AlamofireNetworkActivityIndicator
+  - Atributika
+  - DropDown
+  - MLeaksFinder
+  - pop
+  - SDWebImage
+  - SVProgressHUD
+  - YYModel
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireNetworkActivityIndicator
+    - Atributika
+    - DropDown
+    - FBRetainCycleDetector
+    - MLeaksFinder
+    - pop
+    - SDWebImage
+    - SVProgressHUD
+    - YYModel
+
+EXTERNAL SOURCES:
+  AAInfographics:
+    :git: https://github.com/AAChartModel/AAChartKit-Swift.git
+
+CHECKOUT OPTIONS:
+  AAInfographics:
+    :commit: 7e728d8b8bfac1ef2abd5f6eae1ec0caaa639469
+    :git: https://github.com/AAChartModel/AAChartKit-Swift.git
+
+SPEC CHECKSUMS:
+  AAInfographics: 10f87e06fc007a0adbb05de020e4a2fe3119f8de
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  AlamofireNetworkActivityIndicator: 9acc3de3ca6645bf0efed462396b0df13dd3e7b8
+  Atributika: 7b3631032cf11f2197b352343e0bd1b783d8ca88
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
+  FBRetainCycleDetector: 46f8179bbb1c587deee3ea838a1a3ee02acf5015
+  MLeaksFinder: 8c435bd2f6d070af18cff082b503b21adc130fc0
+  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
+  SDWebImage: 6764b5fa0f73c203728052955dbefa2bf1f33282
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: 5e5d439678e1ae2e8c0d02dc4263cc81ca231095
+
+COCOAPODS: 1.6.1

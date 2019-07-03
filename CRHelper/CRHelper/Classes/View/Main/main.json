@@ -1,0 +1,3 @@
+[{"imageName":"cards","title":"Cards","clsName":"SCCardsViewController"},{"clsName":"SCTournamentsViewController","title":"Tournaments","imageName":"tournaments"},{"title":"Locations","clsName":"SCLocationsViewController","imageName":"locations"},
+    {"title":"News","clsName":"SCNewsViewController","imageName":"news"},
+    {"clsName":"SCMoreViewController","title":"More","imageName":"more"}]

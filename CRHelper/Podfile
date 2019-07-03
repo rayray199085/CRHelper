@@ -1,0 +1,20 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+inhibit_all_warnings!
+
+target 'CRHelper' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+pod "SDWebImage"
+pod "Alamofire"
+pod "AlamofireNetworkActivityIndicator"
+pod "pop"
+pod "DropDown"
+pod "SVProgressHUD"
+pod "Atributika"
+pod "YYModel"
+pod 'AAInfographics', :git => 'https://github.com/AAChartModel/AAChartKit-Swift.git'
+pod 'MLeaksFinder'
+
+end
