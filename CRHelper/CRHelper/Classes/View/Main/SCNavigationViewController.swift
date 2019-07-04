@@ -15,7 +15,13 @@ class SCNavigationViewController: UINavigationController {
         allowSwipeToGoBack()
         navigationBar.barTintColor = HelperCommon.barColor
         navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: HelperCommon.tinColor, NSAttributedString.Key.font:  UIFont(name: "Supercell-Magic", size: 18)!]
+        navigationBar.tintColor = HelperCommon.tinColor
     }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle{
+        return UIStatusBarStyle.lightContent
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.setNeedsStatusBarAppearanceUpdate()

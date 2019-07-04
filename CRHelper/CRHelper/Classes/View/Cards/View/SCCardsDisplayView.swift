@@ -9,9 +9,14 @@
 import UIKit
 import SVProgressHUD
 
+protocol SCCardsDisplayViewDelegate: NSObjectProtocol {
+    func didSelectCell(view: SCCardsDisplayView, index: Int)
+}
+
 private let reuseIdentifier = "cards_cell"
 class SCCardsDisplayView: UIView {
     var viewModel: SCCardsViewModel?
+    weak var delegate: SCCardsDisplayViewDelegate?
     
     class func displayView()->SCCardsDisplayView{
         let nib = UINib(nibName: "SCCardsDisplayView", bundle: nil)
@@ -46,5 +51,9 @@ extension SCCardsDisplayView: UICollectionViewDelegate, UICollectionViewDataSour
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! SCCardsCollectionViewCell
         cell.cardDataItem = viewModel?.cardData?.items?[indexPath.item]
         return cell
-    }    
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        delegate?.didSelectCell(view: self, index: indexPath.item)
+    }
 }

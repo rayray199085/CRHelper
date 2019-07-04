@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Supercell-Magic.ttf">
+            <string>Supercell-Magic</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SCTournamentsDetailsController" customModule="CRHelper" customModuleProvider="target">
+            <connections>
+                <outlet property="creatorButton" destination="ds4-f3-fxN" id="HCU-Xz-pYf"/>
+                <outlet property="tableView" destination="eUR-vg-bFB" id="P1P-kO-p0u"/>
+                <outlet property="view" destination="iN0-l3-epB" id="a00-VM-B2L"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6mC-jh-2AX">
+                    <rect key="frame" x="0.0" y="44" width="414" height="30"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Creator tag: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kim-su-7Qi">
+                            <rect key="frame" x="5" y="6.5" width="109" height="17"/>
+                            <fontDescription key="fontDescription" name="Supercell-Magic" family="Supercell-Magic" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ds4-f3-fxN">
+                            <rect key="frame" x="117" y="0.0" width="46" height="30"/>
+                            <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
+                            <state key="normal" title="Button">
+                                <color key="titleColor" red="0.96116107699999997" green="0.76694005730000003" blue="0.2623715103" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="clickCreatorButton:" destination="-1" eventType="touchUpInside" id="dIW-AI-PGl"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.41713827850000001" green="0.622612834" blue="0.94908612969999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstItem="ds4-f3-fxN" firstAttribute="centerY" secondItem="Kim-su-7Qi" secondAttribute="centerY" id="E1j-fy-cdf"/>
+                        <constraint firstItem="ds4-f3-fxN" firstAttribute="leading" secondItem="Kim-su-7Qi" secondAttribute="trailing" constant="3" id="Mba-eH-AkG"/>
+                        <constraint firstItem="Kim-su-7Qi" firstAttribute="centerY" secondItem="6mC-jh-2AX" secondAttribute="centerY" id="OGr-Tt-u2G"/>
+                        <constraint firstItem="Kim-su-7Qi" firstAttribute="leading" secondItem="6mC-jh-2AX" secondAttribute="leading" constant="5" id="neL-YA-r2f"/>
+                        <constraint firstAttribute="height" constant="30" id="oGA-Hr-TJg"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eUR-vg-bFB">
+                    <rect key="frame" x="0.0" y="74" width="414" height="788"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="6mC-jh-2AX" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="1sD-84-gny"/>
+                <constraint firstItem="eUR-vg-bFB" firstAttribute="top" secondItem="6mC-jh-2AX" secondAttribute="bottom" id="4yl-f1-uQW"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="eUR-vg-bFB" secondAttribute="trailing" id="K7Q-iW-CxP"/>
+                <constraint firstItem="6mC-jh-2AX" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="UlC-EE-1WN"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="eUR-vg-bFB" secondAttribute="bottom" id="Vst-2v-4vp"/>
+                <constraint firstItem="6mC-jh-2AX" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="ghX-ck-qMc"/>
+                <constraint firstItem="eUR-vg-bFB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="lHJ-hF-bcL"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>

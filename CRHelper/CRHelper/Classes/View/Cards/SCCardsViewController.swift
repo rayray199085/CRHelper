@@ -11,6 +11,7 @@ import SVProgressHUD
 
 class SCCardsViewController: UIViewController {
     private let displayView = SCCardsDisplayView.displayView()
+    private let cardsMaskView = SCCardsMaskView.maskView()
     private let viewModel = SCCardsViewModel()
     
     override func viewDidLoad() {
@@ -22,7 +23,10 @@ class SCCardsViewController: UIViewController {
 private extension SCCardsViewController{
     func setupUI(){
         displayView.viewModel = viewModel
+        displayView.delegate = self
         view.addSubview(displayView)
+        view.addSubview(cardsMaskView)
+        cardsMaskView.isHidden = true
     }
     func loadData(){
         SVProgressHUD.show()
@@ -31,5 +35,11 @@ private extension SCCardsViewController{
             SVProgressHUD.dismiss()
         }
     }
-
+}
+extension SCCardsViewController: SCCardsDisplayViewDelegate{
+    func didSelectCell(view: SCCardsDisplayView, index: Int) {
+        cardsMaskView.isHidden = false
+        cardsMaskView.dataItem = viewModel.cardData?.items?[index]
+        cardsMaskView.displayContentView()
+    }
 }

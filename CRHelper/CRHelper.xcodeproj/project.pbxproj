@@ -23,7 +23,6 @@
 		0D5B489B22CC658700BBF68E /* UILabel+SCAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5B485622CC658700BBF68E /* UILabel+SCAddition.m */; };
 		0D5B489C22CC658700BBF68E /* UIColor+SCAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5B485822CC658700BBF68E /* UIColor+SCAddition.m */; };
 		0D5B489D22CC658700BBF68E /* SCNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5B485E22CC658700BBF68E /* SCNetworkManager.swift */; };
-		0D5B489E22CC658700BBF68E /* SCUserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5B486022CC658700BBF68E /* SCUserAccount.swift */; };
 		0D5B489F22CC658700BBF68E /* SCNetworkManager+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5B486122CC658700BBF68E /* SCNetworkManager+extension.swift */; };
 		0D5B48A022CC658700BBF68E /* MXCornerRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5B486422CC658700BBF68E /* MXCornerRadius.m */; };
 		0D5B48A122CC658700BBF68E /* UIApplication+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5B486622CC658700BBF68E /* UIApplication+extension.swift */; };
@@ -44,8 +43,6 @@
 		0D5B48B022CC658700BBF68E /* UIPageControl+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5B487522CC658700BBF68E /* UIPageControl+extension.swift */; };
 		0D5B48B122CC658700BBF68E /* UIBarButtonItem+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5B487622CC658700BBF68E /* UIBarButtonItem+extension.swift */; };
 		0D5B48B222CC658700BBF68E /* UITableView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5B487722CC658700BBF68E /* UITableView+extension.swift */; };
-		0D5B48B322CC658700BBF68E /* OPTIBelwe-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0D5B487922CC658700BBF68E /* OPTIBelwe-Medium.otf */; };
-		0D5B48B422CC658700BBF68E /* JandaManateeBubble.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0D5B487A22CC658700BBF68E /* JandaManateeBubble.ttf */; };
 		0D5B48B722CC658700BBF68E /* SCMoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D5B488122CC658700BBF68E /* SCMoreTableViewCell.xib */; };
 		0D5B48B822CC658700BBF68E /* SCMoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5B488222CC658700BBF68E /* SCMoreTableViewCell.swift */; };
 		0D5B48B922CC658700BBF68E /* SCMoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5B488322CC658700BBF68E /* SCMoreViewController.swift */; };
@@ -66,6 +63,23 @@
 		0D5B48EA22CC8D1700BBF68E /* SCCardsDataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5B48E922CC8D1700BBF68E /* SCCardsDataItem.swift */; };
 		0D5B48ED22CC8DB100BBF68E /* SCCardsUrlItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5B48EC22CC8DB100BBF68E /* SCCardsUrlItem.swift */; };
 		0D5B48EF22CC8E6500BBF68E /* SCCardsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5B48EE22CC8E6500BBF68E /* SCCardsData.swift */; };
+		0DD0B50B22CD6DD20099546C /* SCCardsMaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD0B50A22CD6DD20099546C /* SCCardsMaskView.swift */; };
+		0DD0B50D22CD6DDF0099546C /* SCCardsMaskView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DD0B50C22CD6DDF0099546C /* SCCardsMaskView.xib */; };
+		0DD0B50F22CD7C290099546C /* JandaManateeBubble.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DD0B50E22CD7C270099546C /* JandaManateeBubble.ttf */; };
+		0DD0B51222CD93300099546C /* SCTournamentsDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD0B51122CD93300099546C /* SCTournamentsDisplayView.swift */; };
+		0DD0B51422CD933C0099546C /* SCTournamentsDisplayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DD0B51322CD933C0099546C /* SCTournamentsDisplayView.xib */; };
+		0DD0B51622CDB4110099546C /* SCTournamentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD0B51522CDB4110099546C /* SCTournamentTableViewCell.swift */; };
+		0DD0B51822CDB4220099546C /* SCTournamentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DD0B51722CDB4220099546C /* SCTournamentTableViewCell.xib */; };
+		0DD0B51A22CDB65B0099546C /* SCTournamentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD0B51922CDB65B0099546C /* SCTournamentsViewModel.swift */; };
+		0DD0B51D22CDB8570099546C /* SCTournamentsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD0B51C22CDB8570099546C /* SCTournamentsData.swift */; };
+		0DD0B51F22CDB8A70099546C /* SCTournamentsDataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD0B51E22CDB8A70099546C /* SCTournamentsDataItem.swift */; };
+		0DD0B52122CDB9890099546C /* SCTournamentsGameMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD0B52022CDB9890099546C /* SCTournamentsGameMode.swift */; };
+		0DD0B52322CDC2670099546C /* TimeInterval+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD0B52222CDC2670099546C /* TimeInterval+extension.swift */; };
+		0DD0B52622CDD8FA0099546C /* SCTournamentsDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD0B52522CDD8FA0099546C /* SCTournamentsDetailsController.swift */; };
+		0DD0B52822CDD9150099546C /* SCTournamentsDetailsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DD0B52722CDD9150099546C /* SCTournamentsDetailsController.xib */; };
+		0DD0B52C22CDE8990099546C /* SCTournamentsDetailsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD0B52B22CDE8990099546C /* SCTournamentsDetailsData.swift */; };
+		0DD0B52E22CDE8E00099546C /* SCTournamentMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD0B52D22CDE8E00099546C /* SCTournamentMember.swift */; };
+		0DD0B53122CDE9920099546C /* SCTournamentClan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD0B53022CDE9920099546C /* SCTournamentClan.swift */; };
 		93463C128B715FD6E5147190 /* Pods_CRHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82230AA362CE08A19C7EE9C7 /* Pods_CRHelper.framework */; };
 /* End PBXBuildFile section */
 
@@ -118,7 +132,6 @@
 		0D5B485B22CC658700BBF68E /* SCAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAdditions.h; sourceTree = "<group>"; };
 		0D5B485C22CC658700BBF68E /* NSString+SCAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SCAddition.h"; sourceTree = "<group>"; };
 		0D5B485E22CC658700BBF68E /* SCNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNetworkManager.swift; sourceTree = "<group>"; };
-		0D5B486022CC658700BBF68E /* SCUserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCUserAccount.swift; sourceTree = "<group>"; };
 		0D5B486122CC658700BBF68E /* SCNetworkManager+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SCNetworkManager+extension.swift"; sourceTree = "<group>"; };
 		0D5B486322CC658700BBF68E /* MXCornerRadius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXCornerRadius.h; sourceTree = "<group>"; };
 		0D5B486422CC658700BBF68E /* MXCornerRadius.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXCornerRadius.m; sourceTree = "<group>"; };
@@ -140,8 +153,6 @@
 		0D5B487522CC658700BBF68E /* UIPageControl+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIPageControl+extension.swift"; sourceTree = "<group>"; };
 		0D5B487622CC658700BBF68E /* UIBarButtonItem+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+extension.swift"; sourceTree = "<group>"; };
 		0D5B487722CC658700BBF68E /* UITableView+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+extension.swift"; sourceTree = "<group>"; };
-		0D5B487922CC658700BBF68E /* OPTIBelwe-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OPTIBelwe-Medium.otf"; sourceTree = "<group>"; };
-		0D5B487A22CC658700BBF68E /* JandaManateeBubble.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = JandaManateeBubble.ttf; sourceTree = "<group>"; };
 		0D5B488122CC658700BBF68E /* SCMoreTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCMoreTableViewCell.xib; sourceTree = "<group>"; };
 		0D5B488222CC658700BBF68E /* SCMoreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCMoreTableViewCell.swift; sourceTree = "<group>"; };
 		0D5B488322CC658700BBF68E /* SCMoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCMoreViewController.swift; sourceTree = "<group>"; };
@@ -163,6 +174,23 @@
 		0D5B48E922CC8D1700BBF68E /* SCCardsDataItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCardsDataItem.swift; sourceTree = "<group>"; };
 		0D5B48EC22CC8DB100BBF68E /* SCCardsUrlItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCardsUrlItem.swift; sourceTree = "<group>"; };
 		0D5B48EE22CC8E6500BBF68E /* SCCardsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCardsData.swift; sourceTree = "<group>"; };
+		0DD0B50A22CD6DD20099546C /* SCCardsMaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCCardsMaskView.swift; sourceTree = "<group>"; };
+		0DD0B50C22CD6DDF0099546C /* SCCardsMaskView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCCardsMaskView.xib; sourceTree = "<group>"; };
+		0DD0B50E22CD7C270099546C /* JandaManateeBubble.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = JandaManateeBubble.ttf; sourceTree = "<group>"; };
+		0DD0B51122CD93300099546C /* SCTournamentsDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCTournamentsDisplayView.swift; sourceTree = "<group>"; };
+		0DD0B51322CD933C0099546C /* SCTournamentsDisplayView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCTournamentsDisplayView.xib; sourceTree = "<group>"; };
+		0DD0B51522CDB4110099546C /* SCTournamentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCTournamentTableViewCell.swift; sourceTree = "<group>"; };
+		0DD0B51722CDB4220099546C /* SCTournamentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCTournamentTableViewCell.xib; sourceTree = "<group>"; };
+		0DD0B51922CDB65B0099546C /* SCTournamentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCTournamentsViewModel.swift; sourceTree = "<group>"; };
+		0DD0B51C22CDB8570099546C /* SCTournamentsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCTournamentsData.swift; sourceTree = "<group>"; };
+		0DD0B51E22CDB8A70099546C /* SCTournamentsDataItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCTournamentsDataItem.swift; sourceTree = "<group>"; };
+		0DD0B52022CDB9890099546C /* SCTournamentsGameMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCTournamentsGameMode.swift; sourceTree = "<group>"; };
+		0DD0B52222CDC2670099546C /* TimeInterval+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+extension.swift"; sourceTree = "<group>"; };
+		0DD0B52522CDD8FA0099546C /* SCTournamentsDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCTournamentsDetailsController.swift; sourceTree = "<group>"; };
+		0DD0B52722CDD9150099546C /* SCTournamentsDetailsController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCTournamentsDetailsController.xib; sourceTree = "<group>"; };
+		0DD0B52B22CDE8990099546C /* SCTournamentsDetailsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCTournamentsDetailsData.swift; sourceTree = "<group>"; };
+		0DD0B52D22CDE8E00099546C /* SCTournamentMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCTournamentMember.swift; sourceTree = "<group>"; };
+		0DD0B53022CDE9920099546C /* SCTournamentClan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCTournamentClan.swift; sourceTree = "<group>"; };
 		1FF697AEB4D3A85951E9501E /* Pods-CRHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRHelper.debug.xcconfig"; path = "Target Support Files/Pods-CRHelper/Pods-CRHelper.debug.xcconfig"; sourceTree = "<group>"; };
 		2C64D0AB3E22C5F923EC0913 /* Pods-CRHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRHelper.release.xcconfig"; path = "Target Support Files/Pods-CRHelper/Pods-CRHelper.release.xcconfig"; sourceTree = "<group>"; };
 		82230AA362CE08A19C7EE9C7 /* Pods_CRHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CRHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -271,6 +299,7 @@
 			isa = PBXGroup;
 			children = (
 				0D5B484622CC658700BBF68E /* SCCardsViewModel.swift */,
+				0DD0B51922CDB65B0099546C /* SCTournamentsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -284,7 +313,6 @@
 				0D5B485D22CC658700BBF68E /* Network */,
 				0D5B486222CC658700BBF68E /* MXCornerRadius */,
 				0D5B486522CC658700BBF68E /* Extensions */,
-				0D5B487822CC658700BBF68E /* Fonts */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -333,18 +361,9 @@
 			isa = PBXGroup;
 			children = (
 				0D5B485E22CC658700BBF68E /* SCNetworkManager.swift */,
-				0D5B485F22CC658700BBF68E /* Model */,
 				0D5B486122CC658700BBF68E /* SCNetworkManager+extension.swift */,
 			);
 			path = Network;
-			sourceTree = "<group>";
-		};
-		0D5B485F22CC658700BBF68E /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				0D5B486022CC658700BBF68E /* SCUserAccount.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		0D5B486222CC658700BBF68E /* MXCornerRadius */ = {
@@ -377,22 +396,15 @@
 				0D5B487522CC658700BBF68E /* UIPageControl+extension.swift */,
 				0D5B487622CC658700BBF68E /* UIBarButtonItem+extension.swift */,
 				0D5B487722CC658700BBF68E /* UITableView+extension.swift */,
+				0DD0B52222CDC2670099546C /* TimeInterval+extension.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		0D5B487822CC658700BBF68E /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				0D5B487922CC658700BBF68E /* OPTIBelwe-Medium.otf */,
-				0D5B487A22CC658700BBF68E /* JandaManateeBubble.ttf */,
-			);
-			path = Fonts;
 			sourceTree = "<group>";
 		};
 		0D5B487B22CC658700BBF68E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0DD0B51B22CDB8410099546C /* Tournaments */,
 				0D5B48EB22CC8D9200BBF68E /* Cards */,
 			);
 			path = Model;
@@ -441,6 +453,8 @@
 		0D5B488D22CC658700BBF68E /* Tournaments */ = {
 			isa = PBXGroup;
 			children = (
+				0DD0B52422CDD8170099546C /* Player */,
+				0DD0B51022CD930A0099546C /* Display View */,
 				0D5B488E22CC658700BBF68E /* SCTournamentsViewController.swift */,
 			);
 			path = Tournaments;
@@ -467,6 +481,7 @@
 		0D5B48CA22CC75F700BBF68E /* Font */ = {
 			isa = PBXGroup;
 			children = (
+				0DD0B50E22CD7C270099546C /* JandaManateeBubble.ttf */,
 				0D5B48D022CC788500BBF68E /* Supercell-Magic.ttf */,
 			);
 			path = Font;
@@ -480,6 +495,8 @@
 				0D5B48E522CC855000BBF68E /* SCCardsCollectionViewCell.swift */,
 				0D5B48E622CC855000BBF68E /* SCCardsCollectionViewCell.xib */,
 				0D5B48E322CC837B00BBF68E /* SCCardsFlowLayout.swift */,
+				0DD0B50A22CD6DD20099546C /* SCCardsMaskView.swift */,
+				0DD0B50C22CD6DDF0099546C /* SCCardsMaskView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -492,6 +509,55 @@
 				0D5B48EE22CC8E6500BBF68E /* SCCardsData.swift */,
 			);
 			path = Cards;
+			sourceTree = "<group>";
+		};
+		0DD0B51022CD930A0099546C /* Display View */ = {
+			isa = PBXGroup;
+			children = (
+				0DD0B51122CD93300099546C /* SCTournamentsDisplayView.swift */,
+				0DD0B51322CD933C0099546C /* SCTournamentsDisplayView.xib */,
+				0DD0B51522CDB4110099546C /* SCTournamentTableViewCell.swift */,
+				0DD0B51722CDB4220099546C /* SCTournamentTableViewCell.xib */,
+			);
+			path = "Display View";
+			sourceTree = "<group>";
+		};
+		0DD0B51B22CDB8410099546C /* Tournaments */ = {
+			isa = PBXGroup;
+			children = (
+				0DD0B52A22CDE8600099546C /* A Tournament Details */,
+				0DD0B52922CDE8490099546C /* All Tournaments */,
+			);
+			path = Tournaments;
+			sourceTree = "<group>";
+		};
+		0DD0B52422CDD8170099546C /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				0DD0B52522CDD8FA0099546C /* SCTournamentsDetailsController.swift */,
+				0DD0B52722CDD9150099546C /* SCTournamentsDetailsController.xib */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		0DD0B52922CDE8490099546C /* All Tournaments */ = {
+			isa = PBXGroup;
+			children = (
+				0DD0B51C22CDB8570099546C /* SCTournamentsData.swift */,
+				0DD0B51E22CDB8A70099546C /* SCTournamentsDataItem.swift */,
+				0DD0B52022CDB9890099546C /* SCTournamentsGameMode.swift */,
+			);
+			path = "All Tournaments";
+			sourceTree = "<group>";
+		};
+		0DD0B52A22CDE8600099546C /* A Tournament Details */ = {
+			isa = PBXGroup;
+			children = (
+				0DD0B52B22CDE8990099546C /* SCTournamentsDetailsData.swift */,
+				0DD0B52D22CDE8E00099546C /* SCTournamentMember.swift */,
+				0DD0B53022CDE9920099546C /* SCTournamentClan.swift */,
+			);
+			path = "A Tournament Details";
 			sourceTree = "<group>";
 		};
 		21D669F1CCFC5DFD8979BD84 /* Frameworks */ = {
@@ -619,11 +685,14 @@
 			files = (
 				0D5B48D122CC788800BBF68E /* Supercell-Magic.ttf in Resources */,
 				0D5B48C122CC658700BBF68E /* main.json in Resources */,
-				0D5B48B322CC658700BBF68E /* OPTIBelwe-Medium.otf in Resources */,
+				0DD0B51822CDB4220099546C /* SCTournamentTableViewCell.xib in Resources */,
+				0DD0B50D22CD6DDF0099546C /* SCCardsMaskView.xib in Resources */,
 				0D5B482022CC652D00BBF68E /* LaunchScreen.storyboard in Resources */,
 				0D5B481D22CC652D00BBF68E /* Assets.xcassets in Resources */,
-				0D5B48B422CC658700BBF68E /* JandaManateeBubble.ttf in Resources */,
 				0D5B48E822CC855000BBF68E /* SCCardsCollectionViewCell.xib in Resources */,
+				0DD0B52822CDD9150099546C /* SCTournamentsDetailsController.xib in Resources */,
+				0DD0B51422CD933C0099546C /* SCTournamentsDisplayView.xib in Resources */,
+				0DD0B50F22CD7C290099546C /* JandaManateeBubble.ttf in Resources */,
 				0D5B48E022CC7DF300BBF68E /* SCCardsDisplayView.xib in Resources */,
 				0D5B48B722CC658700BBF68E /* SCMoreTableViewCell.xib in Resources */,
 			);
@@ -717,7 +786,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D5B489E22CC658700BBF68E /* SCUserAccount.swift in Sources */,
+				0DD0B51F22CDB8A70099546C /* SCTournamentsDataItem.swift in Sources */,
 				0D5B48A022CC658700BBF68E /* MXCornerRadius.m in Sources */,
 				0D5B48A722CC658700BBF68E /* UIView+extension.swift in Sources */,
 				0D5B48AB22CC658700BBF68E /* UITabBarController+extension.swift in Sources */,
@@ -725,6 +794,10 @@
 				0D5B48AE22CC658700BBF68E /* UITableViewCell+extension.swift in Sources */,
 				0D5B489522CC658700BBF68E /* UIButton+SCAddition.m in Sources */,
 				0D5B48E722CC855000BBF68E /* SCCardsCollectionViewCell.swift in Sources */,
+				0DD0B52E22CDE8E00099546C /* SCTournamentMember.swift in Sources */,
+				0DD0B52122CDB9890099546C /* SCTournamentsGameMode.swift in Sources */,
+				0DD0B51222CD93300099546C /* SCTournamentsDisplayView.swift in Sources */,
+				0DD0B51A22CDB65B0099546C /* SCTournamentsViewModel.swift in Sources */,
 				0D5B48A122CC658700BBF68E /* UIApplication+extension.swift in Sources */,
 				0D5B48ED22CC8DB100BBF68E /* SCCardsUrlItem.swift in Sources */,
 				0D5B48AF22CC658700BBF68E /* WKWebView+extension.swift in Sources */,
@@ -735,7 +808,9 @@
 				0D5B48B822CC658700BBF68E /* SCMoreTableViewCell.swift in Sources */,
 				0D5B48DE22CC7DC900BBF68E /* SCCardsDisplayView.swift in Sources */,
 				0D5B48E422CC837B00BBF68E /* SCCardsFlowLayout.swift in Sources */,
+				0DD0B52622CDD8FA0099546C /* SCTournamentsDetailsController.swift in Sources */,
 				0D5B48AD22CC658700BBF68E /* String+extension.swift in Sources */,
+				0DD0B53122CDE9920099546C /* SCTournamentClan.swift in Sources */,
 				0D5B489322CC658700BBF68E /* SCCardsViewModel.swift in Sources */,
 				0D5B48EA22CC8D1700BBF68E /* SCCardsDataItem.swift in Sources */,
 				0D5B489C22CC658700BBF68E /* UIColor+SCAddition.m in Sources */,
@@ -747,18 +822,23 @@
 				0D5B48C922CC6E9B00BBF68E /* SCNewsViewController.swift in Sources */,
 				0D5B481622CC652B00BBF68E /* AppDelegate.swift in Sources */,
 				0D5B489A22CC658700BBF68E /* CABasicAnimation+SCAddition.m in Sources */,
+				0DD0B52C22CDE8990099546C /* SCTournamentsDetailsData.swift in Sources */,
 				0D5B48B222CC658700BBF68E /* UITableView+extension.swift in Sources */,
+				0DD0B51622CDB4110099546C /* SCTournamentTableViewCell.swift in Sources */,
 				0D5B48C022CC658700BBF68E /* SCTournamentsViewController.swift in Sources */,
 				0D5B48B122CC658700BBF68E /* UIBarButtonItem+extension.swift in Sources */,
 				0D5B48AC22CC658700BBF68E /* UIViewController+extension.swift in Sources */,
+				0DD0B50B22CD6DD20099546C /* SCCardsMaskView.swift in Sources */,
 				0D5B48A522CC658700BBF68E /* Date+extension.swift in Sources */,
 				0D5B48A922CC658700BBF68E /* UINavigationController+extension.swift in Sources */,
 				0D5B489822CC658700BBF68E /* NSString+SCAddition.m in Sources */,
+				0DD0B52322CDC2670099546C /* TimeInterval+extension.swift in Sources */,
 				0D5B489622CC658700BBF68E /* NSObject+SCAddition.m in Sources */,
 				0D5B48AA22CC658700BBF68E /* Bundle+extension.swift in Sources */,
 				0D5B48A622CC658700BBF68E /* UILabel+extension.swift in Sources */,
 				0D5B489922CC658700BBF68E /* UIScreen+UISCreen_extenshion.m in Sources */,
 				0D5B48A322CC658700BBF68E /* UIFont+extension.swift in Sources */,
+				0DD0B51D22CDB8570099546C /* SCTournamentsData.swift in Sources */,
 				0D5B48B022CC658700BBF68E /* UIPageControl+extension.swift in Sources */,
 				0D5B48A422CC658700BBF68E /* UIWindow+extension.swift in Sources */,
 				0D5B48BF22CC658700BBF68E /* SCLocationsViewController.swift in Sources */,

@@ -11,9 +11,6 @@ import Alamofire
 
 class SCNetworkManager{
     static let shared = SCNetworkManager()
-    private let headers = ["Content-Type": "application/json",
-                           "Accept": "application/json",
-                           "apikey": "471d2518-963e-4851-8998-94e7d8e469a0"]
     private init() {
         
     }
@@ -26,7 +23,7 @@ class SCNetworkManager{
     ///   - params: parameters in dictionary
     ///   - completion: json(array/ dictionary), isSuccess, error
     func request(urlString:String, method:HTTPMethod, params:[String:Any]?, completion :@escaping (_ response: Any?,_ isSuccess: Bool, _ statusCode: Int,_ error: Error?)->() ){
-        Alamofire.request(urlString, method: method, parameters: params, encoding: URLEncoding.default, headers: headers).responseJSON { (dataResponse) in
+        Alamofire.request(urlString, method: method, parameters: params, encoding: URLEncoding.default, headers: nil).responseJSON { (dataResponse) in
             completion(
                 dataResponse.result.value,
                 dataResponse.result.isSuccess,

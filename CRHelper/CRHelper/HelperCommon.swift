@@ -14,5 +14,5 @@ struct HelperCommon {
     static let barColor = UIColor(displayP3Red: 83.0 / 250, green: 140.0 / 250, blue: 237.0 / 250, alpha: 1.0)
     static let tabbarNoramlColor = UIColor(displayP3Red: 128.0 / 250, green: 128.0 / 250, blue: 128.0 / 250, alpha: 1.0)
       
-    static let govGreenColor = UIColor(displayP3Red: 42.0 / 250, green: 100.0 / 250, blue: 67.0 / 250, alpha: 1.0)
+    static let navHighlightedColor = UIColor(displayP3Red: 68.0 / 250, green: 68.0 / 250, blue: 68.0 / 250, alpha: 1.0)
 }

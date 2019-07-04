@@ -29,3 +29,22 @@ extension SCNetworkManager{
         }
     }
 }
+extension SCNetworkManager{
+    func getTournamentsData(name: String, completion:@escaping (_ dict: [String: Any]?,_ isSuccess: Bool)->()){
+        let urlString = "https://api.clashroyale.com/v1/tournaments"
+        let params = ["authorization": "Bearer \(HelperCommon.apiKey)", "name": name]
+        request(urlString: urlString, method: HTTPMethod.get, params: params) { (res, isSuccess, _, _) in
+            let dict = res as? [String: Any]
+            completion(dict, isSuccess)
+        }
+    }
+    
+    func getTournamentDetailsData(tag: String, completion:@escaping (_ dict: [String: Any]?,_ isSuccess: Bool)->()){
+        let urlString = "https://api.clashroyale.com/v1/tournaments/\((tag as NSString).replacingOccurrences(of: "#", with: "%23"))"
+        let params = ["authorization": "Bearer \(HelperCommon.apiKey)"]
+        request(urlString: urlString, method: HTTPMethod.get, params: params) { (res, isSuccess, _, _) in
+            let dict = res as? [String: Any]
+            completion(dict, isSuccess)
+        }
+    }
+}

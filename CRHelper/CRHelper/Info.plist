@@ -49,6 +49,7 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>Supercell-Magic.ttf</string>
+		<string>JandaManateeBubble.ttf</string>
 	</array>
 </dict>
 </plist>
