@@ -22,7 +22,7 @@ class SCCardsViewController: UIViewController {
 }
 private extension SCCardsViewController{
     func setupUI(){
-        displayView.viewModel = viewModel
+        
         displayView.delegate = self
         view.addSubview(displayView)
         view.addSubview(cardsMaskView)
@@ -31,6 +31,7 @@ private extension SCCardsViewController{
     func loadData(){
         SVProgressHUD.show()
         viewModel.loadCardsData { [weak self](isSuccess) in
+            self?.displayView.cardDataItems = self?.viewModel.cardData?.items
             self?.displayView.collectionView.reloadData()
             SVProgressHUD.dismiss()
         }

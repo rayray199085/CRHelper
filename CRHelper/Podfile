@@ -16,5 +16,6 @@ pod "Atributika"
 pod "YYModel"
 pod 'AAInfographics', :git => 'https://github.com/AAChartModel/AAChartKit-Swift.git'
 pod 'MLeaksFinder'
+pod 'DLSlideView', :git => 'https://github.com/agdsdl/DLSlideView.git'
 
 end

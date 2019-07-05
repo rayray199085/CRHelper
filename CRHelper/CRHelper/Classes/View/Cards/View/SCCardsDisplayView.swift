@@ -15,7 +15,8 @@ protocol SCCardsDisplayViewDelegate: NSObjectProtocol {
 
 private let reuseIdentifier = "cards_cell"
 class SCCardsDisplayView: UIView {
-    var viewModel: SCCardsViewModel?
+    var cardDataItems: [SCCardsDataItem]?
+    
     weak var delegate: SCCardsDisplayViewDelegate?
     
     class func displayView()->SCCardsDisplayView{
@@ -44,12 +45,12 @@ private extension SCCardsDisplayView{
 }
 extension SCCardsDisplayView: UICollectionViewDelegate, UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return viewModel?.cardData?.items?.count ?? 0
+        return cardDataItems?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! SCCardsCollectionViewCell
-        cell.cardDataItem = viewModel?.cardData?.items?[indexPath.item]
+        cell.cardDataItem = cardDataItems?[indexPath.item]
         return cell
     }
     

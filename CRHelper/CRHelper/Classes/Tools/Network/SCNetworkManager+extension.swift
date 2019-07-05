@@ -48,3 +48,22 @@ extension SCNetworkManager{
         }
     }
 }
+extension SCNetworkManager{
+    func getPlayerData(tag: String, completion:@escaping (_ dict: [String: Any]?,_ isSuccess: Bool)->()){
+        let urlString = "https://api.clashroyale.com/v1/players/\((tag as NSString).replacingOccurrences(of: "#", with: "%23"))"
+        let params = ["authorization": "Bearer \(HelperCommon.apiKey)"]
+        request(urlString: urlString, method: HTTPMethod.get, params: params) { (res, isSuccess, _, _) in
+            let dict = res as? [String: Any]
+            completion(dict, isSuccess)
+        }
+    }
+    
+    func getPlayerChest(tag: String, completion:@escaping (_ dict: [String: Any]?,_ isSuccess: Bool)->()){
+        let urlString = "https://api.clashroyale.com/v1/players/\((tag as NSString).replacingOccurrences(of: "#", with: "%23"))/upcomingchests"
+        let params = ["authorization": "Bearer \(HelperCommon.apiKey)"]
+        request(urlString: urlString, method: HTTPMethod.get, params: params) { (res, isSuccess, _, _) in
+            let dict = res as? [String: Any]
+            completion(dict, isSuccess)
+        }
+    }
+}

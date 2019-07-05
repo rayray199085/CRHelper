@@ -7,6 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D2CCB4722CEC55300668A1F /* SCTournamentPlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2CCB4622CEC55300668A1F /* SCTournamentPlayerCell.swift */; };
+		0D2CCB4922CEC56200668A1F /* SCTournamentPlayerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D2CCB4822CEC56200668A1F /* SCTournamentPlayerCell.xib */; };
+		0D2CCB4C22CED2BF00668A1F /* SCPlayerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2CCB4B22CED2BF00668A1F /* SCPlayerDetailsViewController.swift */; };
+		0D2CCB4E22CED2DB00668A1F /* SCPlayerDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D2CCB4D22CED2DB00668A1F /* SCPlayerDetailsViewController.xib */; };
+		0D2CCB5422CEDFA900668A1F /* SCPlayerStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2CCB5322CEDFA900668A1F /* SCPlayerStatsViewController.swift */; };
+		0D2CCB5822CEDFE200668A1F /* SCPlayerCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2CCB5722CEDFE200668A1F /* SCPlayerCardsViewController.swift */; };
+		0D2CCB5C22CEE02500668A1F /* SCPlayerDeckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2CCB5B22CEE02500668A1F /* SCPlayerDeckViewController.swift */; };
+		0D2CCB6022CEE30C00668A1F /* SCPlayerStatsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D2CCB5F22CEE30C00668A1F /* SCPlayerStatsViewController.storyboard */; };
+		0D2CCB6322CEFC7300668A1F /* SCPlayerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2CCB6222CEFC7300668A1F /* SCPlayerData.swift */; };
+		0D2CCB6522CEFD9100668A1F /* SCPlayerArena.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2CCB6422CEFD9100668A1F /* SCPlayerArena.swift */; };
+		0D2CCB6722CEFDEA00668A1F /* SCPlayerBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2CCB6622CEFDEA00668A1F /* SCPlayerBadge.swift */; };
+		0D2CCB6922CEFE5A00668A1F /* SCPlayerAchievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2CCB6822CEFE5A00668A1F /* SCPlayerAchievement.swift */; };
+		0D2CCB6C22CF1DA000668A1F /* SCPlayerAchievementsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2CCB6B22CF1DA000668A1F /* SCPlayerAchievementsController.swift */; };
+		0D2CCB6E22CF1DB900668A1F /* SCPlayerAchievementsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D2CCB6D22CF1DB900668A1F /* SCPlayerAchievementsController.xib */; };
+		0D2CCB7022CF220E00668A1F /* SCPlayerAchievementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2CCB6F22CF220E00668A1F /* SCPlayerAchievementCell.swift */; };
+		0D2CCB7222CF221E00668A1F /* SCPlayerAchievementCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D2CCB7122CF221E00668A1F /* SCPlayerAchievementCell.xib */; };
+		0D2CCB7522CF2B6100668A1F /* SCPlayerChestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2CCB7422CF2B6100668A1F /* SCPlayerChestView.swift */; };
+		0D2CCB7722CF2B6C00668A1F /* SCPlayerChestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D2CCB7622CF2B6C00668A1F /* SCPlayerChestView.xib */; };
+		0D2CCB7922CF357D00668A1F /* SCPlayerChestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2CCB7822CF357D00668A1F /* SCPlayerChestCell.swift */; };
+		0D2CCB7B22CF358C00668A1F /* SCPlayerChestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D2CCB7A22CF358C00668A1F /* SCPlayerChestCell.xib */; };
+		0D2CCB7D22CF37DF00668A1F /* SCPlayerChest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2CCB7C22CF37DF00668A1F /* SCPlayerChest.swift */; };
+		0D2CCB7F22CF383300668A1F /* SCPlayerChestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2CCB7E22CF383300668A1F /* SCPlayerChestData.swift */; };
 		0D5B481622CC652B00BBF68E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5B481522CC652B00BBF68E /* AppDelegate.swift */; };
 		0D5B481D22CC652D00BBF68E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D5B481C22CC652D00BBF68E /* Assets.xcassets */; };
 		0D5B482022CC652D00BBF68E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D5B481E22CC652D00BBF68E /* LaunchScreen.storyboard */; };
@@ -101,6 +123,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D2CCB4622CEC55300668A1F /* SCTournamentPlayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCTournamentPlayerCell.swift; sourceTree = "<group>"; };
+		0D2CCB4822CEC56200668A1F /* SCTournamentPlayerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCTournamentPlayerCell.xib; sourceTree = "<group>"; };
+		0D2CCB4B22CED2BF00668A1F /* SCPlayerDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCPlayerDetailsViewController.swift; sourceTree = "<group>"; };
+		0D2CCB4D22CED2DB00668A1F /* SCPlayerDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCPlayerDetailsViewController.xib; sourceTree = "<group>"; };
+		0D2CCB5322CEDFA900668A1F /* SCPlayerStatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCPlayerStatsViewController.swift; sourceTree = "<group>"; };
+		0D2CCB5722CEDFE200668A1F /* SCPlayerCardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCPlayerCardsViewController.swift; sourceTree = "<group>"; };
+		0D2CCB5B22CEE02500668A1F /* SCPlayerDeckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCPlayerDeckViewController.swift; sourceTree = "<group>"; };
+		0D2CCB5F22CEE30C00668A1F /* SCPlayerStatsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SCPlayerStatsViewController.storyboard; sourceTree = "<group>"; };
+		0D2CCB6222CEFC7300668A1F /* SCPlayerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCPlayerData.swift; sourceTree = "<group>"; };
+		0D2CCB6422CEFD9100668A1F /* SCPlayerArena.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCPlayerArena.swift; sourceTree = "<group>"; };
+		0D2CCB6622CEFDEA00668A1F /* SCPlayerBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCPlayerBadge.swift; sourceTree = "<group>"; };
+		0D2CCB6822CEFE5A00668A1F /* SCPlayerAchievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCPlayerAchievement.swift; sourceTree = "<group>"; };
+		0D2CCB6B22CF1DA000668A1F /* SCPlayerAchievementsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCPlayerAchievementsController.swift; sourceTree = "<group>"; };
+		0D2CCB6D22CF1DB900668A1F /* SCPlayerAchievementsController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCPlayerAchievementsController.xib; sourceTree = "<group>"; };
+		0D2CCB6F22CF220E00668A1F /* SCPlayerAchievementCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCPlayerAchievementCell.swift; sourceTree = "<group>"; };
+		0D2CCB7122CF221E00668A1F /* SCPlayerAchievementCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCPlayerAchievementCell.xib; sourceTree = "<group>"; };
+		0D2CCB7422CF2B6100668A1F /* SCPlayerChestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCPlayerChestView.swift; sourceTree = "<group>"; };
+		0D2CCB7622CF2B6C00668A1F /* SCPlayerChestView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCPlayerChestView.xib; sourceTree = "<group>"; };
+		0D2CCB7822CF357D00668A1F /* SCPlayerChestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCPlayerChestCell.swift; sourceTree = "<group>"; };
+		0D2CCB7A22CF358C00668A1F /* SCPlayerChestCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCPlayerChestCell.xib; sourceTree = "<group>"; };
+		0D2CCB7C22CF37DF00668A1F /* SCPlayerChest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCPlayerChest.swift; sourceTree = "<group>"; };
+		0D2CCB7E22CF383300668A1F /* SCPlayerChestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCPlayerChestData.swift; sourceTree = "<group>"; };
 		0D5B481222CC652B00BBF68E /* CRHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CRHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D5B481522CC652B00BBF68E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D5B481C22CC652D00BBF68E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -222,6 +266,88 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D2CCB4A22CED28900668A1F /* Player Details */ = {
+			isa = PBXGroup;
+			children = (
+				0D2CCB4F22CEDF6500668A1F /* View */,
+				0D2CCB4B22CED2BF00668A1F /* SCPlayerDetailsViewController.swift */,
+				0D2CCB4D22CED2DB00668A1F /* SCPlayerDetailsViewController.xib */,
+			);
+			path = "Player Details";
+			sourceTree = "<group>";
+		};
+		0D2CCB4F22CEDF6500668A1F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0D2CCB7322CF2B3400668A1F /* Chest */,
+				0D2CCB6A22CF1D7200668A1F /* Achievements */,
+				0D2CCB5222CEDF9500668A1F /* Player Deck */,
+				0D2CCB5122CEDF8C00668A1F /* Player Cards */,
+				0D2CCB5022CEDF7000668A1F /* Player Stats */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0D2CCB5022CEDF7000668A1F /* Player Stats */ = {
+			isa = PBXGroup;
+			children = (
+				0D2CCB5322CEDFA900668A1F /* SCPlayerStatsViewController.swift */,
+				0D2CCB5F22CEE30C00668A1F /* SCPlayerStatsViewController.storyboard */,
+			);
+			path = "Player Stats";
+			sourceTree = "<group>";
+		};
+		0D2CCB5122CEDF8C00668A1F /* Player Cards */ = {
+			isa = PBXGroup;
+			children = (
+				0D2CCB5722CEDFE200668A1F /* SCPlayerCardsViewController.swift */,
+			);
+			path = "Player Cards";
+			sourceTree = "<group>";
+		};
+		0D2CCB5222CEDF9500668A1F /* Player Deck */ = {
+			isa = PBXGroup;
+			children = (
+				0D2CCB5B22CEE02500668A1F /* SCPlayerDeckViewController.swift */,
+			);
+			path = "Player Deck";
+			sourceTree = "<group>";
+		};
+		0D2CCB6122CEFC5B00668A1F /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				0D2CCB6222CEFC7300668A1F /* SCPlayerData.swift */,
+				0D2CCB6422CEFD9100668A1F /* SCPlayerArena.swift */,
+				0D2CCB6622CEFDEA00668A1F /* SCPlayerBadge.swift */,
+				0D2CCB6822CEFE5A00668A1F /* SCPlayerAchievement.swift */,
+				0D2CCB7C22CF37DF00668A1F /* SCPlayerChest.swift */,
+				0D2CCB7E22CF383300668A1F /* SCPlayerChestData.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		0D2CCB6A22CF1D7200668A1F /* Achievements */ = {
+			isa = PBXGroup;
+			children = (
+				0D2CCB6B22CF1DA000668A1F /* SCPlayerAchievementsController.swift */,
+				0D2CCB6D22CF1DB900668A1F /* SCPlayerAchievementsController.xib */,
+				0D2CCB6F22CF220E00668A1F /* SCPlayerAchievementCell.swift */,
+				0D2CCB7122CF221E00668A1F /* SCPlayerAchievementCell.xib */,
+			);
+			path = Achievements;
+			sourceTree = "<group>";
+		};
+		0D2CCB7322CF2B3400668A1F /* Chest */ = {
+			isa = PBXGroup;
+			children = (
+				0D2CCB7422CF2B6100668A1F /* SCPlayerChestView.swift */,
+				0D2CCB7622CF2B6C00668A1F /* SCPlayerChestView.xib */,
+				0D2CCB7822CF357D00668A1F /* SCPlayerChestCell.swift */,
+				0D2CCB7A22CF358C00668A1F /* SCPlayerChestCell.xib */,
+			);
+			path = Chest;
+			sourceTree = "<group>";
+		};
 		0D5B480922CC652B00BBF68E = {
 			isa = PBXGroup;
 			children = (
@@ -453,6 +579,7 @@
 		0D5B488D22CC658700BBF68E /* Tournaments */ = {
 			isa = PBXGroup;
 			children = (
+				0D2CCB4A22CED28900668A1F /* Player Details */,
 				0DD0B52422CDD8170099546C /* Player */,
 				0DD0B51022CD930A0099546C /* Display View */,
 				0D5B488E22CC658700BBF68E /* SCTournamentsViewController.swift */,
@@ -525,6 +652,7 @@
 		0DD0B51B22CDB8410099546C /* Tournaments */ = {
 			isa = PBXGroup;
 			children = (
+				0D2CCB6122CEFC5B00668A1F /* Player */,
 				0DD0B52A22CDE8600099546C /* A Tournament Details */,
 				0DD0B52922CDE8490099546C /* All Tournaments */,
 			);
@@ -536,6 +664,8 @@
 			children = (
 				0DD0B52522CDD8FA0099546C /* SCTournamentsDetailsController.swift */,
 				0DD0B52722CDD9150099546C /* SCTournamentsDetailsController.xib */,
+				0D2CCB4622CEC55300668A1F /* SCTournamentPlayerCell.swift */,
+				0D2CCB4822CEC56200668A1F /* SCTournamentPlayerCell.xib */,
 			);
 			path = Player;
 			sourceTree = "<group>";
@@ -685,15 +815,22 @@
 			files = (
 				0D5B48D122CC788800BBF68E /* Supercell-Magic.ttf in Resources */,
 				0D5B48C122CC658700BBF68E /* main.json in Resources */,
+				0D2CCB7222CF221E00668A1F /* SCPlayerAchievementCell.xib in Resources */,
 				0DD0B51822CDB4220099546C /* SCTournamentTableViewCell.xib in Resources */,
+				0D2CCB6022CEE30C00668A1F /* SCPlayerStatsViewController.storyboard in Resources */,
 				0DD0B50D22CD6DDF0099546C /* SCCardsMaskView.xib in Resources */,
 				0D5B482022CC652D00BBF68E /* LaunchScreen.storyboard in Resources */,
 				0D5B481D22CC652D00BBF68E /* Assets.xcassets in Resources */,
 				0D5B48E822CC855000BBF68E /* SCCardsCollectionViewCell.xib in Resources */,
+				0D2CCB4922CEC56200668A1F /* SCTournamentPlayerCell.xib in Resources */,
+				0D2CCB7722CF2B6C00668A1F /* SCPlayerChestView.xib in Resources */,
+				0D2CCB7B22CF358C00668A1F /* SCPlayerChestCell.xib in Resources */,
+				0D2CCB4E22CED2DB00668A1F /* SCPlayerDetailsViewController.xib in Resources */,
 				0DD0B52822CDD9150099546C /* SCTournamentsDetailsController.xib in Resources */,
 				0DD0B51422CD933C0099546C /* SCTournamentsDisplayView.xib in Resources */,
 				0DD0B50F22CD7C290099546C /* JandaManateeBubble.ttf in Resources */,
 				0D5B48E022CC7DF300BBF68E /* SCCardsDisplayView.xib in Resources */,
+				0D2CCB6E22CF1DB900668A1F /* SCPlayerAchievementsController.xib in Resources */,
 				0D5B48B722CC658700BBF68E /* SCMoreTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -728,6 +865,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireNetworkActivityIndicator/AlamofireNetworkActivityIndicator.framework",
 				"${BUILT_PRODUCTS_DIR}/Atributika/Atributika.framework",
+				"${BUILT_PRODUCTS_DIR}/DLSlideView/DLSlideView.framework",
 				"${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework",
 				"${BUILT_PRODUCTS_DIR}/FBRetainCycleDetector/FBRetainCycleDetector.framework",
 				"${BUILT_PRODUCTS_DIR}/MLeaksFinder/MLeaksFinder.framework",
@@ -744,6 +882,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireNetworkActivityIndicator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Atributika.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DLSlideView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DropDown.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBRetainCycleDetector.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MLeaksFinder.framework",
@@ -790,9 +929,11 @@
 				0D5B48A022CC658700BBF68E /* MXCornerRadius.m in Sources */,
 				0D5B48A722CC658700BBF68E /* UIView+extension.swift in Sources */,
 				0D5B48AB22CC658700BBF68E /* UITabBarController+extension.swift in Sources */,
+				0D2CCB7022CF220E00668A1F /* SCPlayerAchievementCell.swift in Sources */,
 				0D5B48A822CC658700BBF68E /* UIImage+extension.swift in Sources */,
 				0D5B48AE22CC658700BBF68E /* UITableViewCell+extension.swift in Sources */,
 				0D5B489522CC658700BBF68E /* UIButton+SCAddition.m in Sources */,
+				0D2CCB4722CEC55300668A1F /* SCTournamentPlayerCell.swift in Sources */,
 				0D5B48E722CC855000BBF68E /* SCCardsCollectionViewCell.swift in Sources */,
 				0DD0B52E22CDE8E00099546C /* SCTournamentMember.swift in Sources */,
 				0DD0B52122CDB9890099546C /* SCTournamentsGameMode.swift in Sources */,
@@ -800,6 +941,7 @@
 				0DD0B51A22CDB65B0099546C /* SCTournamentsViewModel.swift in Sources */,
 				0D5B48A122CC658700BBF68E /* UIApplication+extension.swift in Sources */,
 				0D5B48ED22CC8DB100BBF68E /* SCCardsUrlItem.swift in Sources */,
+				0D2CCB5822CEDFE200668A1F /* SCPlayerCardsViewController.swift in Sources */,
 				0D5B48AF22CC658700BBF68E /* WKWebView+extension.swift in Sources */,
 				0D5B489422CC658700BBF68E /* FFLabel.swift in Sources */,
 				0D5B489B22CC658700BBF68E /* UILabel+SCAddition.m in Sources */,
@@ -812,8 +954,11 @@
 				0D5B48AD22CC658700BBF68E /* String+extension.swift in Sources */,
 				0DD0B53122CDE9920099546C /* SCTournamentClan.swift in Sources */,
 				0D5B489322CC658700BBF68E /* SCCardsViewModel.swift in Sources */,
+				0D2CCB6C22CF1DA000668A1F /* SCPlayerAchievementsController.swift in Sources */,
+				0D2CCB7F22CF383300668A1F /* SCPlayerChestData.swift in Sources */,
 				0D5B48EA22CC8D1700BBF68E /* SCCardsDataItem.swift in Sources */,
 				0D5B489C22CC658700BBF68E /* UIColor+SCAddition.m in Sources */,
+				0D2CCB7D22CF37DF00668A1F /* SCPlayerChest.swift in Sources */,
 				0D5B48C222CC658700BBF68E /* SCNavigationViewController.swift in Sources */,
 				0D5B48B922CC658700BBF68E /* SCMoreViewController.swift in Sources */,
 				0D5B48A222CC658700BBF68E /* UIImageView+extension.swift in Sources */,
@@ -824,13 +969,18 @@
 				0D5B489A22CC658700BBF68E /* CABasicAnimation+SCAddition.m in Sources */,
 				0DD0B52C22CDE8990099546C /* SCTournamentsDetailsData.swift in Sources */,
 				0D5B48B222CC658700BBF68E /* UITableView+extension.swift in Sources */,
+				0D2CCB5C22CEE02500668A1F /* SCPlayerDeckViewController.swift in Sources */,
 				0DD0B51622CDB4110099546C /* SCTournamentTableViewCell.swift in Sources */,
 				0D5B48C022CC658700BBF68E /* SCTournamentsViewController.swift in Sources */,
 				0D5B48B122CC658700BBF68E /* UIBarButtonItem+extension.swift in Sources */,
+				0D2CCB6922CEFE5A00668A1F /* SCPlayerAchievement.swift in Sources */,
+				0D2CCB6322CEFC7300668A1F /* SCPlayerData.swift in Sources */,
 				0D5B48AC22CC658700BBF68E /* UIViewController+extension.swift in Sources */,
 				0DD0B50B22CD6DD20099546C /* SCCardsMaskView.swift in Sources */,
 				0D5B48A522CC658700BBF68E /* Date+extension.swift in Sources */,
 				0D5B48A922CC658700BBF68E /* UINavigationController+extension.swift in Sources */,
+				0D2CCB7922CF357D00668A1F /* SCPlayerChestCell.swift in Sources */,
+				0D2CCB7522CF2B6100668A1F /* SCPlayerChestView.swift in Sources */,
 				0D5B489822CC658700BBF68E /* NSString+SCAddition.m in Sources */,
 				0DD0B52322CDC2670099546C /* TimeInterval+extension.swift in Sources */,
 				0D5B489622CC658700BBF68E /* NSObject+SCAddition.m in Sources */,
@@ -838,12 +988,16 @@
 				0D5B48A622CC658700BBF68E /* UILabel+extension.swift in Sources */,
 				0D5B489922CC658700BBF68E /* UIScreen+UISCreen_extenshion.m in Sources */,
 				0D5B48A322CC658700BBF68E /* UIFont+extension.swift in Sources */,
+				0D2CCB5422CEDFA900668A1F /* SCPlayerStatsViewController.swift in Sources */,
 				0DD0B51D22CDB8570099546C /* SCTournamentsData.swift in Sources */,
 				0D5B48B022CC658700BBF68E /* UIPageControl+extension.swift in Sources */,
 				0D5B48A422CC658700BBF68E /* UIWindow+extension.swift in Sources */,
+				0D2CCB4C22CED2BF00668A1F /* SCPlayerDetailsViewController.swift in Sources */,
 				0D5B48BF22CC658700BBF68E /* SCLocationsViewController.swift in Sources */,
+				0D2CCB6522CEFD9100668A1F /* SCPlayerArena.swift in Sources */,
 				0D5B48C622CC65BE00BBF68E /* HelperCommon.swift in Sources */,
 				0D5B489D22CC658700BBF68E /* SCNetworkManager.swift in Sources */,
+				0D2CCB6722CEFDEA00668A1F /* SCPlayerBadge.swift in Sources */,
 				0D5B489722CC658700BBF68E /* UIImageView+SCAddition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

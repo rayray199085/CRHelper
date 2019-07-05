@@ -51,15 +51,8 @@
                                             <constraint firstAttribute="height" constant="405" id="dH8-jG-wTK"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="divider" translatesAutoresizingMaskIntoConstraints="NO" id="Vya-0k-bW2">
-                                        <rect key="frame" x="107.5" y="11.5" width="5" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="3xJ-j6-gpM"/>
-                                            <constraint firstAttribute="width" constant="5" id="Il1-yj-NEj"/>
-                                        </constraints>
-                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Knight" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sci-XX-eMd">
-                                        <rect key="frame" x="13" y="23" width="89.5" height="27.5"/>
+                                        <rect key="frame" x="130.5" y="13" width="89.5" height="27.5"/>
                                         <fontDescription key="fontDescription" name="Supercell-Magic" family="Supercell-Magic" pointSize="25"/>
                                         <color key="textColor" red="0.8810276985168457" green="0.8641628623008728" blue="0.78820645809173584" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
@@ -76,28 +69,58 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFY-ve-JXv">
+                                        <rect key="frame" x="11" y="47" width="37.5" height="13.5"/>
+                                        <fontDescription key="fontDescription" name="Supercell-Magic" family="Supercell-Magic" pointSize="12"/>
+                                        <color key="textColor" red="0.16476398710000001" green="0.39028275010000002" blue="0.26271879669999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="25K-XN-SGQ">
+                                        <rect key="frame" x="51.5" y="40.5" width="19" height="26"/>
+                                        <fontDescription key="fontDescription" name="JandaManateeBubble" family="Janda Manatee Bubble" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Count:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E8T-Ok-LOU">
+                                        <rect key="frame" x="132" y="47" width="43" height="13.5"/>
+                                        <fontDescription key="fontDescription" name="Supercell-Magic" family="Supercell-Magic" pointSize="12"/>
+                                        <color key="textColor" red="0.96116107699999997" green="0.76694005730000003" blue="0.2623715103" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r4c-nI-mbe">
+                                        <rect key="frame" x="178" y="40.5" width="19" height="26"/>
+                                        <fontDescription key="fontDescription" name="JandaManateeBubble" family="Janda Manatee Bubble" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="eFY-ve-JXv" firstAttribute="leading" secondItem="Nab-s0-ZOH" secondAttribute="leading" constant="3" id="0Me-QE-vhg"/>
                                     <constraint firstItem="ipF-Aq-y3Y" firstAttribute="leading" secondItem="eZJ-vS-HDm" secondAttribute="leading" constant="5" id="0hT-pM-Eje"/>
+                                    <constraint firstItem="E8T-Ok-LOU" firstAttribute="trailing" secondItem="eZJ-vS-HDm" secondAttribute="centerX" id="3QA-x1-yFQ"/>
                                     <constraint firstItem="eDU-gG-6cB" firstAttribute="leading" secondItem="ThL-4C-cp4" secondAttribute="trailing" constant="3" id="42h-bi-2Gj"/>
+                                    <constraint firstItem="ThL-4C-cp4" firstAttribute="centerY" secondItem="eFY-ve-JXv" secondAttribute="centerY" id="4Ma-eu-JCh"/>
                                     <constraint firstAttribute="trailing" secondItem="ipF-Aq-y3Y" secondAttribute="trailing" constant="5" id="6c2-1a-h5K"/>
                                     <constraint firstItem="Nab-s0-ZOH" firstAttribute="top" secondItem="eZJ-vS-HDm" secondAttribute="top" constant="8" id="7UW-1d-0KR"/>
                                     <constraint firstItem="Se2-bO-kMh" firstAttribute="top" secondItem="eZJ-vS-HDm" secondAttribute="top" id="9o5-88-gHj"/>
-                                    <constraint firstItem="Vya-0k-bW2" firstAttribute="centerY" secondItem="Sci-XX-eMd" secondAttribute="centerY" id="Fpu-Oo-MXP"/>
                                     <constraint firstItem="eDU-gG-6cB" firstAttribute="bottom" secondItem="Nab-s0-ZOH" secondAttribute="bottom" id="HvK-AH-TT6"/>
-                                    <constraint firstItem="Vya-0k-bW2" firstAttribute="leading" secondItem="Sci-XX-eMd" secondAttribute="trailing" constant="5" id="JbM-qk-jTp"/>
                                     <constraint firstItem="Se2-bO-kMh" firstAttribute="leading" secondItem="eZJ-vS-HDm" secondAttribute="leading" id="JcI-Mo-ANq"/>
                                     <constraint firstItem="Nab-s0-ZOH" firstAttribute="leading" secondItem="eZJ-vS-HDm" secondAttribute="leading" constant="8" id="Ke5-YR-hUv"/>
-                                    <constraint firstItem="Sci-XX-eMd" firstAttribute="leading" secondItem="Nab-s0-ZOH" secondAttribute="leading" constant="5" id="KfS-Nh-tPx"/>
+                                    <constraint firstItem="Sci-XX-eMd" firstAttribute="centerX" secondItem="eZJ-vS-HDm" secondAttribute="centerX" id="L3Y-hP-7fR"/>
+                                    <constraint firstItem="25K-XN-SGQ" firstAttribute="centerY" secondItem="eFY-ve-JXv" secondAttribute="centerY" id="Mmq-XP-roB"/>
+                                    <constraint firstItem="Sci-XX-eMd" firstAttribute="top" secondItem="Nab-s0-ZOH" secondAttribute="top" constant="5" id="Nbf-UU-D5a"/>
                                     <constraint firstAttribute="trailing" secondItem="Nab-s0-ZOH" secondAttribute="trailing" constant="8" id="QLu-4w-ewU"/>
+                                    <constraint firstItem="r4c-nI-mbe" firstAttribute="centerY" secondItem="E8T-Ok-LOU" secondAttribute="centerY" id="SWv-e8-UPo"/>
                                     <constraint firstAttribute="height" constant="480" id="SdA-yF-QeE"/>
                                     <constraint firstAttribute="bottom" secondItem="ipF-Aq-y3Y" secondAttribute="bottom" constant="5" id="Ydc-UI-Y1N"/>
+                                    <constraint firstItem="25K-XN-SGQ" firstAttribute="leading" secondItem="eFY-ve-JXv" secondAttribute="trailing" constant="3" id="d9a-Dp-BYi"/>
                                     <constraint firstItem="ipF-Aq-y3Y" firstAttribute="top" secondItem="Nab-s0-ZOH" secondAttribute="bottom" constant="5" id="e9c-DZ-xig"/>
                                     <constraint firstItem="eDU-gG-6cB" firstAttribute="centerY" secondItem="ThL-4C-cp4" secondAttribute="centerY" id="fnd-V4-l9e"/>
+                                    <constraint firstItem="ThL-4C-cp4" firstAttribute="centerY" secondItem="E8T-Ok-LOU" secondAttribute="centerY" id="jjE-YF-CCP"/>
+                                    <constraint firstItem="r4c-nI-mbe" firstAttribute="leading" secondItem="E8T-Ok-LOU" secondAttribute="trailing" constant="3" id="lI7-GP-Jrq"/>
                                     <constraint firstItem="Se2-bO-kMh" firstAttribute="height" secondItem="eZJ-vS-HDm" secondAttribute="height" id="nYd-qZ-hms"/>
                                     <constraint firstItem="Se2-bO-kMh" firstAttribute="width" secondItem="eZJ-vS-HDm" secondAttribute="width" id="qkV-m6-olV"/>
                                     <constraint firstAttribute="width" constant="350" id="sf0-7c-cS3"/>
-                                    <constraint firstItem="Sci-XX-eMd" firstAttribute="centerY" secondItem="Nab-s0-ZOH" secondAttribute="centerY" id="x4E-Nt-90W"/>
                                     <constraint firstItem="eDU-gG-6cB" firstAttribute="trailing" secondItem="Nab-s0-ZOH" secondAttribute="trailing" id="zFz-2z-5xt"/>
                                 </constraints>
                             </view>
@@ -124,14 +147,17 @@
             <connections>
                 <outlet property="cardImageView" destination="ipF-Aq-y3Y" id="Gl6-mV-vmQ"/>
                 <outlet property="contentView" destination="eZJ-vS-HDm" id="ypA-W4-Wbc"/>
-                <outlet property="levelLabel" destination="eDU-gG-6cB" id="9sp-i0-dU8"/>
+                <outlet property="countLabel" destination="r4c-nI-mbe" id="C4q-gv-5bi"/>
+                <outlet property="countName" destination="E8T-Ok-LOU" id="si4-mV-TBX"/>
+                <outlet property="levelLabel" destination="25K-XN-SGQ" id="EXp-ne-iDu"/>
+                <outlet property="levelName" destination="eFY-ve-JXv" id="xM7-bX-yQI"/>
+                <outlet property="maxLevelLabel" destination="eDU-gG-6cB" id="9sp-i0-dU8"/>
                 <outlet property="nameLabel" destination="Sci-XX-eMd" id="j3O-2v-Yfx"/>
             </connections>
             <point key="canvasLocation" x="47.826086956521742" y="35.491071428571423"/>
         </view>
     </objects>
     <resources>
-        <image name="divider" width="2.5" height="30"/>
         <image name="selector_bg" width="159.5" height="160"/>
         <image name="title_bg" width="751.5" height="36.5"/>
     </resources>

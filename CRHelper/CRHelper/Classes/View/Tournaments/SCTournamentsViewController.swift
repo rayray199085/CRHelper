@@ -23,14 +23,14 @@ class SCTournamentsViewController: UIViewController {
         navigationItem.rightBarButtonItem?.isEnabled = false
         if displayView.searchView.isHidden{
             displayView.searchView.isHidden = false
-            displayView.searchView.addPopAlphaAnimation(fromValue: from, toValue: to, duration: 0.5) { [weak self](_, _) in
+            displayView.searchView.addPopAlphaAnimation(fromValue: from, toValue: to, duration: 0.25) { [weak self](_, _) in
                 self?.navigationItem.rightBarButtonItem?.isEnabled = true
                 self?.displayView.textField.becomeFirstResponder()
                 self?.displayView.tableViewTopCons.constant = 44
             }
         }else{
             displayView.textField.resignFirstResponder()
-            displayView.searchView.addPopAlphaAnimation(fromValue: from, toValue: to, duration: 0.5) { [weak self](_, _) in
+            displayView.searchView.addPopAlphaAnimation(fromValue: from, toValue: to, duration: 0.25) { [weak self](_, _) in
                 self?.navigationItem.rightBarButtonItem?.isEnabled = true
                 self?.displayView.searchView.isHidden = true
                 self?.displayView.tableViewTopCons.constant = 0
@@ -51,12 +51,9 @@ extension SCTournamentsViewController: SCTournamentsDisplayViewDelegate{
     func didSelectedCell(view: SCTournamentsDisplayView, index: Int) {
         let vc = SCTournamentsDetailsController()
         let tag = viewModel.tournamentsData?.items?[index].tag
-        SVProgressHUD.show()
-        viewModel.loadTournamentsDetailsData(tag: tag) { [weak self](isSuccess) in
-            SVProgressHUD.dismiss()
-            vc.title = tag
-            self?.navigationController?.pushViewController(vc, animated: true)
-        }
+        vc.title = tag
+        vc.viewModel = viewModel
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     func didPressSearchButton(view: SCTournamentsDisplayView, textContent: String?) {
