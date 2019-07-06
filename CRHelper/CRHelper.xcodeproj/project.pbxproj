@@ -102,6 +102,15 @@
 		0DD0B52C22CDE8990099546C /* SCTournamentsDetailsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD0B52B22CDE8990099546C /* SCTournamentsDetailsData.swift */; };
 		0DD0B52E22CDE8E00099546C /* SCTournamentMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD0B52D22CDE8E00099546C /* SCTournamentMember.swift */; };
 		0DD0B53122CDE9920099546C /* SCTournamentClan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD0B53022CDE9920099546C /* SCTournamentClan.swift */; };
+		0DE8D40E22D01B4D00797B3C /* SCClanDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE8D40D22D01B4D00797B3C /* SCClanDetailsViewController.swift */; };
+		0DE8D41222D0236700797B3C /* SCClanData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE8D41122D0236700797B3C /* SCClanData.swift */; };
+		0DE8D41522D0240300797B3C /* SCClanLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE8D41422D0240300797B3C /* SCClanLocation.swift */; };
+		0DE8D41722D0252100797B3C /* SCClanMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE8D41622D0252100797B3C /* SCClanMember.swift */; };
+		0DE8D41922D0294F00797B3C /* SCBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE8D41822D0294F00797B3C /* SCBaseViewModel.swift */; };
+		0DE8D41D22D0308B00797B3C /* SCClanMemberListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE8D41C22D0308B00797B3C /* SCClanMemberListCell.swift */; };
+		0DE8D41F22D030A600797B3C /* SCClanMemberListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DE8D41E22D030A600797B3C /* SCClanMemberListCell.xib */; };
+		0DE8D42222D0548A00797B3C /* SCClanDetailsInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE8D42122D0548A00797B3C /* SCClanDetailsInfoView.swift */; };
+		0DE8D42422D054FB00797B3C /* SCClanDetailsInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DE8D42322D054FB00797B3C /* SCClanDetailsInfoView.xib */; };
 		93463C128B715FD6E5147190 /* Pods_CRHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82230AA362CE08A19C7EE9C7 /* Pods_CRHelper.framework */; };
 /* End PBXBuildFile section */
 
@@ -235,6 +244,15 @@
 		0DD0B52B22CDE8990099546C /* SCTournamentsDetailsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCTournamentsDetailsData.swift; sourceTree = "<group>"; };
 		0DD0B52D22CDE8E00099546C /* SCTournamentMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCTournamentMember.swift; sourceTree = "<group>"; };
 		0DD0B53022CDE9920099546C /* SCTournamentClan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCTournamentClan.swift; sourceTree = "<group>"; };
+		0DE8D40D22D01B4D00797B3C /* SCClanDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCClanDetailsViewController.swift; sourceTree = "<group>"; };
+		0DE8D41122D0236700797B3C /* SCClanData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCClanData.swift; sourceTree = "<group>"; };
+		0DE8D41422D0240300797B3C /* SCClanLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCClanLocation.swift; sourceTree = "<group>"; };
+		0DE8D41622D0252100797B3C /* SCClanMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCClanMember.swift; sourceTree = "<group>"; };
+		0DE8D41822D0294F00797B3C /* SCBaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCBaseViewModel.swift; sourceTree = "<group>"; };
+		0DE8D41C22D0308B00797B3C /* SCClanMemberListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCClanMemberListCell.swift; sourceTree = "<group>"; };
+		0DE8D41E22D030A600797B3C /* SCClanMemberListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCClanMemberListCell.xib; sourceTree = "<group>"; };
+		0DE8D42122D0548A00797B3C /* SCClanDetailsInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCClanDetailsInfoView.swift; sourceTree = "<group>"; };
+		0DE8D42322D054FB00797B3C /* SCClanDetailsInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCClanDetailsInfoView.xib; sourceTree = "<group>"; };
 		1FF697AEB4D3A85951E9501E /* Pods-CRHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRHelper.debug.xcconfig"; path = "Target Support Files/Pods-CRHelper/Pods-CRHelper.debug.xcconfig"; sourceTree = "<group>"; };
 		2C64D0AB3E22C5F923EC0913 /* Pods-CRHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRHelper.release.xcconfig"; path = "Target Support Files/Pods-CRHelper/Pods-CRHelper.release.xcconfig"; sourceTree = "<group>"; };
 		82230AA362CE08A19C7EE9C7 /* Pods_CRHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CRHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -426,6 +444,7 @@
 			children = (
 				0D5B484622CC658700BBF68E /* SCCardsViewModel.swift */,
 				0DD0B51922CDB65B0099546C /* SCTournamentsViewModel.swift */,
+				0DE8D41822D0294F00797B3C /* SCBaseViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -579,6 +598,7 @@
 		0D5B488D22CC658700BBF68E /* Tournaments */ = {
 			isa = PBXGroup;
 			children = (
+				0DE8D40C22D01B1800797B3C /* Clan details */,
 				0D2CCB4A22CED28900668A1F /* Player Details */,
 				0DD0B52422CDD8170099546C /* Player */,
 				0DD0B51022CD930A0099546C /* Display View */,
@@ -652,6 +672,7 @@
 		0DD0B51B22CDB8410099546C /* Tournaments */ = {
 			isa = PBXGroup;
 			children = (
+				0DE8D41322D0236D00797B3C /* Clan */,
 				0D2CCB6122CEFC5B00668A1F /* Player */,
 				0DD0B52A22CDE8600099546C /* A Tournament Details */,
 				0DD0B52922CDE8490099546C /* All Tournaments */,
@@ -688,6 +709,52 @@
 				0DD0B53022CDE9920099546C /* SCTournamentClan.swift */,
 			);
 			path = "A Tournament Details";
+			sourceTree = "<group>";
+		};
+		0DE8D40C22D01B1800797B3C /* Clan details */ = {
+			isa = PBXGroup;
+			children = (
+				0DE8D41A22D0305E00797B3C /* Views */,
+				0DE8D40D22D01B4D00797B3C /* SCClanDetailsViewController.swift */,
+			);
+			path = "Clan details";
+			sourceTree = "<group>";
+		};
+		0DE8D41322D0236D00797B3C /* Clan */ = {
+			isa = PBXGroup;
+			children = (
+				0DE8D41122D0236700797B3C /* SCClanData.swift */,
+				0DE8D41422D0240300797B3C /* SCClanLocation.swift */,
+				0DE8D41622D0252100797B3C /* SCClanMember.swift */,
+			);
+			path = Clan;
+			sourceTree = "<group>";
+		};
+		0DE8D41A22D0305E00797B3C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0DE8D42022D0546A00797B3C /* Details */,
+				0DE8D41B22D0307300797B3C /* Member List */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0DE8D41B22D0307300797B3C /* Member List */ = {
+			isa = PBXGroup;
+			children = (
+				0DE8D41C22D0308B00797B3C /* SCClanMemberListCell.swift */,
+				0DE8D41E22D030A600797B3C /* SCClanMemberListCell.xib */,
+			);
+			path = "Member List";
+			sourceTree = "<group>";
+		};
+		0DE8D42022D0546A00797B3C /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				0DE8D42122D0548A00797B3C /* SCClanDetailsInfoView.swift */,
+				0DE8D42322D054FB00797B3C /* SCClanDetailsInfoView.xib */,
+			);
+			path = Details;
 			sourceTree = "<group>";
 		};
 		21D669F1CCFC5DFD8979BD84 /* Frameworks */ = {
@@ -828,10 +895,12 @@
 				0D2CCB4E22CED2DB00668A1F /* SCPlayerDetailsViewController.xib in Resources */,
 				0DD0B52822CDD9150099546C /* SCTournamentsDetailsController.xib in Resources */,
 				0DD0B51422CD933C0099546C /* SCTournamentsDisplayView.xib in Resources */,
+				0DE8D41F22D030A600797B3C /* SCClanMemberListCell.xib in Resources */,
 				0DD0B50F22CD7C290099546C /* JandaManateeBubble.ttf in Resources */,
 				0D5B48E022CC7DF300BBF68E /* SCCardsDisplayView.xib in Resources */,
 				0D2CCB6E22CF1DB900668A1F /* SCPlayerAchievementsController.xib in Resources */,
 				0D5B48B722CC658700BBF68E /* SCMoreTableViewCell.xib in Resources */,
+				0DE8D42422D054FB00797B3C /* SCClanDetailsInfoView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -934,12 +1003,14 @@
 				0D5B48AE22CC658700BBF68E /* UITableViewCell+extension.swift in Sources */,
 				0D5B489522CC658700BBF68E /* UIButton+SCAddition.m in Sources */,
 				0D2CCB4722CEC55300668A1F /* SCTournamentPlayerCell.swift in Sources */,
+				0DE8D42222D0548A00797B3C /* SCClanDetailsInfoView.swift in Sources */,
 				0D5B48E722CC855000BBF68E /* SCCardsCollectionViewCell.swift in Sources */,
 				0DD0B52E22CDE8E00099546C /* SCTournamentMember.swift in Sources */,
 				0DD0B52122CDB9890099546C /* SCTournamentsGameMode.swift in Sources */,
 				0DD0B51222CD93300099546C /* SCTournamentsDisplayView.swift in Sources */,
 				0DD0B51A22CDB65B0099546C /* SCTournamentsViewModel.swift in Sources */,
 				0D5B48A122CC658700BBF68E /* UIApplication+extension.swift in Sources */,
+				0DE8D41522D0240300797B3C /* SCClanLocation.swift in Sources */,
 				0D5B48ED22CC8DB100BBF68E /* SCCardsUrlItem.swift in Sources */,
 				0D2CCB5822CEDFE200668A1F /* SCPlayerCardsViewController.swift in Sources */,
 				0D5B48AF22CC658700BBF68E /* WKWebView+extension.swift in Sources */,
@@ -973,6 +1044,7 @@
 				0DD0B51622CDB4110099546C /* SCTournamentTableViewCell.swift in Sources */,
 				0D5B48C022CC658700BBF68E /* SCTournamentsViewController.swift in Sources */,
 				0D5B48B122CC658700BBF68E /* UIBarButtonItem+extension.swift in Sources */,
+				0DE8D41722D0252100797B3C /* SCClanMember.swift in Sources */,
 				0D2CCB6922CEFE5A00668A1F /* SCPlayerAchievement.swift in Sources */,
 				0D2CCB6322CEFC7300668A1F /* SCPlayerData.swift in Sources */,
 				0D5B48AC22CC658700BBF68E /* UIViewController+extension.swift in Sources */,
@@ -984,19 +1056,23 @@
 				0D5B489822CC658700BBF68E /* NSString+SCAddition.m in Sources */,
 				0DD0B52322CDC2670099546C /* TimeInterval+extension.swift in Sources */,
 				0D5B489622CC658700BBF68E /* NSObject+SCAddition.m in Sources */,
+				0DE8D41D22D0308B00797B3C /* SCClanMemberListCell.swift in Sources */,
 				0D5B48AA22CC658700BBF68E /* Bundle+extension.swift in Sources */,
 				0D5B48A622CC658700BBF68E /* UILabel+extension.swift in Sources */,
 				0D5B489922CC658700BBF68E /* UIScreen+UISCreen_extenshion.m in Sources */,
 				0D5B48A322CC658700BBF68E /* UIFont+extension.swift in Sources */,
+				0DE8D41922D0294F00797B3C /* SCBaseViewModel.swift in Sources */,
 				0D2CCB5422CEDFA900668A1F /* SCPlayerStatsViewController.swift in Sources */,
 				0DD0B51D22CDB8570099546C /* SCTournamentsData.swift in Sources */,
 				0D5B48B022CC658700BBF68E /* UIPageControl+extension.swift in Sources */,
 				0D5B48A422CC658700BBF68E /* UIWindow+extension.swift in Sources */,
 				0D2CCB4C22CED2BF00668A1F /* SCPlayerDetailsViewController.swift in Sources */,
 				0D5B48BF22CC658700BBF68E /* SCLocationsViewController.swift in Sources */,
+				0DE8D40E22D01B4D00797B3C /* SCClanDetailsViewController.swift in Sources */,
 				0D2CCB6522CEFD9100668A1F /* SCPlayerArena.swift in Sources */,
 				0D5B48C622CC65BE00BBF68E /* HelperCommon.swift in Sources */,
 				0D5B489D22CC658700BBF68E /* SCNetworkManager.swift in Sources */,
+				0DE8D41222D0236700797B3C /* SCClanData.swift in Sources */,
 				0D2CCB6722CEFDEA00668A1F /* SCPlayerBadge.swift in Sources */,
 				0D5B489722CC658700BBF68E /* UIImageView+SCAddition.m in Sources */,
 			);
@@ -1167,6 +1243,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3CB5U428B8;
 				INFOPLIST_FILE = CRHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1186,6 +1263,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3CB5U428B8;
 				INFOPLIST_FILE = CRHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

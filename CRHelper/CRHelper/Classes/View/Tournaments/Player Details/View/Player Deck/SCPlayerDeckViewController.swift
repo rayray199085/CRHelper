@@ -10,7 +10,7 @@ import UIKit
 import SVProgressHUD
 
 class SCPlayerDeckViewController: UIViewController {
-    var viewModel: SCTournamentsViewModel?{
+    var viewModel: SCBaseViewModel?{
         didSet{
             loadData()
         }

@@ -8,7 +8,11 @@
 
 import UIKit
 
+protocol SCTournamentPlayerCellDelegate: NSObjectProtocol {
+    func didClickClanButton(view: SCTournamentPlayerCell, clanTag: String?)
+}
 class SCTournamentPlayerCell: UITableViewCell {
+    weak var delegate: SCTournamentPlayerCellDelegate?
     
     var member: SCTournamentMember?{
         didSet{
@@ -26,5 +30,6 @@ class SCTournamentPlayerCell: UITableViewCell {
     @IBOutlet weak var clanButton: UIButton!
     
     @IBAction func clickClanButton(_ sender: Any) {
+        delegate?.didClickClanButton(view: self, clanTag: member?.clan?.tag)
     }
 }

@@ -21,6 +21,7 @@ class SCTournamentsDetailsController: UIViewController {
         setupUI()
         loadData()
     }
+    
     @IBAction func clickCreatorButton(_ sender: Any) {
         showPlayerInfo(tag: viewModel?.detailsData?.creatorTag)
     }
@@ -31,6 +32,17 @@ class SCTournamentsDetailsController: UIViewController {
         vc.viewModel = viewModel
         SVProgressHUD.show()
         viewModel?.loadPlayerData(tag: tag, completion: { [weak self] (isSuccess) in
+            self?.navigationController?.pushViewController(vc, animated: true)
+            SVProgressHUD.dismiss()
+        })
+    }
+    
+    func showClanInfo(tag: String?){
+        let vc = SCClanDetailsViewController()
+        vc.title = tag
+        vc.viewModel = viewModel
+        SVProgressHUD.show()
+        viewModel?.loadClanData(clanTag: tag, completion: { [weak self] (isSuccess) in
             self?.navigationController?.pushViewController(vc, animated: true)
             SVProgressHUD.dismiss()
         })
@@ -56,16 +68,26 @@ private extension SCTournamentsDetailsController{
 extension SCTournamentsDetailsController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let playerCount = viewModel?.detailsData?.membersList?.count ?? 0
-        tableView.separatorStyle = playerCount > 0 ? UITableViewCell.SeparatorStyle.singleLine : .none
+        tableView.hideSeparatorWhenEmpty(count: playerCount)
         return playerCount
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! SCTournamentPlayerCell
         cell.member = viewModel?.detailsData?.membersList?[indexPath.row]
+        cell.delegate = self
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         showPlayerInfo(tag: viewModel?.detailsData?.membersList?[indexPath.row].tag)
+    }
+}
+extension SCTournamentsDetailsController: SCTournamentPlayerCellDelegate{
+    func didClickClanButton(view: SCTournamentPlayerCell, clanTag: String?) {
+        SVProgressHUD.show()
+        viewModel?.loadClanData(clanTag: clanTag, completion: { [weak self](isSuccess) in
+            self?.showClanInfo(tag: clanTag)
+            SVProgressHUD.dismiss()
+        })
     }
 }

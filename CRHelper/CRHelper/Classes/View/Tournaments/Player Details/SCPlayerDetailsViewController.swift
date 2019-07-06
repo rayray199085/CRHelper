@@ -11,7 +11,7 @@ import DLSlideView
 import SVProgressHUD
 
 class SCPlayerDetailsViewController: UIViewController {
-    var viewModel: SCTournamentsViewModel?
+    var viewModel: SCBaseViewModel?
     
     private let statsViewController = UIStoryboard(name: "SCPlayerStatsViewController", bundle: nil).instantiateViewController(withIdentifier: "player_stats") as! SCPlayerStatsViewController
     private let cardsViewController = SCPlayerCardsViewController()
@@ -31,27 +31,21 @@ class SCPlayerDetailsViewController: UIViewController {
     }
     
     @objc private func clickChestsButton(){
-        if chestView.frame.origin.x == UIScreen.main.bounds.width{
-            navigationItem.rightBarButtonItem?.isEnabled = false
-            if viewModel?.chestData != nil{
-                showChestView()
-                return
-            }
-            SVProgressHUD.show()
-            viewModel?.loadChestData(completion: { [weak self](isSuccess) in
-                self?.chestView.tableView.reloadData()
-                self?.showChestView()
-                SVProgressHUD.dismiss()
-            })
-            
-        }else{
-            chestView.addPopHorizontalAnimation(fromValue: UIScreen.main.bounds.width / 2, toValue: UIScreen.main.bounds.width * 3 / 2, springBounciness: 8, springSpeed: 8, delay: 0) { [weak self](_, _) in
-                 self?.navigationItem.rightBarButtonItem?.isEnabled = true
-            }
+        navigationItem.rightBarButtonItem?.isEnabled = false
+        if viewModel?.chestData != nil{
+            showChestView()
+            return
         }
+        SVProgressHUD.show()
+        viewModel?.loadChestData(completion: { [weak self](isSuccess) in
+            self?.chestView.tableView.reloadData()
+            self?.showChestView()
+            SVProgressHUD.dismiss()
+        })
     }
     func showChestView(){
-        chestView.addPopHorizontalAnimation(fromValue: UIScreen.main.bounds.width * 3 / 2, toValue: UIScreen.main.bounds.width / 2, springBounciness: 8, springSpeed: 8, delay: 0) { [weak self](_, _) in
+        chestView.tableView.scroll(to: UITableView.scrollsTo.top, animated: true)
+        chestView.addPopHorizontalAnimation(fromValue: UIScreen.screenWidth() * 3 / 2, toValue: UIScreen.screenWidth() / 2, springBounciness: 8, springSpeed: 8, delay: 0) { [weak self](_, _) in
             self?.navigationItem.rightBarButtonItem?.isEnabled = true
         }
     }
@@ -61,8 +55,10 @@ private extension SCPlayerDetailsViewController{
     func setupUI(){
         setupTabedSlideView()
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Chests", fontSize: 16, target: self, action: #selector(clickChestsButton), isBack: false)
-        view.addSubview(chestView)
-        chestView.frame.origin.x = UIScreen.main.bounds.width
+        
+        navigationController?.view.addSubview(chestView)
+        chestView.delegate = self
+        chestView.frame.origin.x = UIScreen.screenWidth()
         chestView.viewModel = viewModel
     }
     func setupTabedSlideView(){
@@ -124,5 +120,10 @@ extension SCPlayerDetailsViewController: DLTabedSlideViewDelegate{
         default:
             break
         }
+    }
+}
+extension SCPlayerDetailsViewController: SCPlayerChestViewDelegate{
+    func didClickMaskButton(view: SCPlayerChestView) {
+        chestView.addPopHorizontalAnimation(fromValue: UIScreen.screenWidth() / 2, toValue: UIScreen.screenWidth() * 3 / 2, springBounciness: 8, springSpeed: 8, delay: 0, completionBlock: nil)
     }
 }

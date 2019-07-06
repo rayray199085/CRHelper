@@ -9,7 +9,7 @@
 import UIKit
 
 class SCPlayerStatsViewController: UITableViewController {
-    var viewModel: SCTournamentsViewModel?{
+    var viewModel: SCBaseViewModel?{
         didSet{
             nameLabel.text = viewModel?.playerData?.name
             clanLabel.text = viewModel?.playerData?.clan?.name

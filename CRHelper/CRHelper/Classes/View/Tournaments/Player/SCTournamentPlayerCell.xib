@@ -60,8 +60,8 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3J-GD-zph">
-                        <rect key="frame" x="44" y="39" width="46" height="30"/>
-                        <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
+                        <rect key="frame" x="44" y="39" width="50" height="30"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                         <state key="normal" title="Button">
                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </state>

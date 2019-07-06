@@ -48,7 +48,7 @@ extension SCTournamentsDisplayView: UITextFieldDelegate{
 extension SCTournamentsDisplayView: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let itemCount = viewModel?.tournamentsData?.items?.count ?? 0
-        tableView.separatorStyle = itemCount > 0 ? UITableViewCell.SeparatorStyle.singleLine : .none
+        tableView.hideSeparatorWhenEmpty(count: itemCount)
         return itemCount
     }
     

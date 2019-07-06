@@ -16,17 +16,46 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="60b-dd-DFv">
-                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                </tableView>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="isO-jE-t7f">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="i6A-4o-ILm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQH-pL-Qlt">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <connections>
+                                    <action selector="clickMaskButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="ZEw-yq-TzO"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="60b-dd-DFv">
+                                <rect key="frame" x="32" y="248" width="350" height="400"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="5W9-3U-nBV"/>
+                                    <constraint firstAttribute="height" constant="400" id="RdI-AM-z6h"/>
+                                </constraints>
+                            </tableView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="60b-dd-DFv" firstAttribute="centerY" secondItem="i6A-4o-ILm" secondAttribute="centerY" id="QF8-P6-Hm7"/>
+                            <constraint firstItem="60b-dd-DFv" firstAttribute="centerX" secondItem="i6A-4o-ILm" secondAttribute="centerX" id="g1q-rM-gsK"/>
+                        </constraints>
+                    </view>
+                    <constraints>
+                        <constraint firstItem="DQH-pL-Qlt" firstAttribute="width" secondItem="isO-jE-t7f" secondAttribute="width" id="J0l-MK-Zll"/>
+                        <constraint firstItem="DQH-pL-Qlt" firstAttribute="leading" secondItem="isO-jE-t7f" secondAttribute="leading" id="aFf-64-wgg"/>
+                        <constraint firstItem="DQH-pL-Qlt" firstAttribute="top" secondItem="isO-jE-t7f" secondAttribute="top" id="dTg-c1-zKu"/>
+                        <constraint firstItem="DQH-pL-Qlt" firstAttribute="height" secondItem="isO-jE-t7f" secondAttribute="height" id="n8s-Th-9xo"/>
+                    </constraints>
+                    <blurEffect style="light"/>
+                </visualEffectView>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="60b-dd-DFv" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="K3t-ji-UdJ"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="60b-dd-DFv" secondAttribute="trailing" id="cgk-Hw-ims"/>
-                <constraint firstItem="60b-dd-DFv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="eHX-2b-f6o"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="60b-dd-DFv" secondAttribute="bottom" id="io0-rd-fjH"/>
+                <constraint firstItem="isO-jE-t7f" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="b5Y-PS-VOW"/>
+                <constraint firstAttribute="bottom" secondItem="isO-jE-t7f" secondAttribute="bottom" id="cPe-T1-unQ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="isO-jE-t7f" secondAttribute="trailing" id="iDX-ij-hnt"/>
+                <constraint firstItem="isO-jE-t7f" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="w2J-9Q-5eU"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>

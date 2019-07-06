@@ -12,7 +12,7 @@ private let reuseIdentifier = "achieve_cell"
 class SCPlayerAchievementsController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
-    var viewModel: SCTournamentsViewModel?{
+   var viewModel: SCBaseViewModel?{
         didSet{
             tableView.reloadData()
         }

@@ -22,10 +22,9 @@ class SCCardsViewController: UIViewController {
 }
 private extension SCCardsViewController{
     func setupUI(){
-        
         displayView.delegate = self
         view.addSubview(displayView)
-        view.addSubview(cardsMaskView)
+        tabBarController?.view.addSubview(cardsMaskView)
         cardsMaskView.isHidden = true
     }
     func loadData(){
@@ -40,6 +39,7 @@ private extension SCCardsViewController{
 extension SCCardsViewController: SCCardsDisplayViewDelegate{
     func didSelectCell(view: SCCardsDisplayView, index: Int) {
         cardsMaskView.isHidden = false
+        tabBarController?.view.bringSubviewToFront(cardsMaskView)
         cardsMaskView.dataItem = viewModel.cardData?.items?[index]
         cardsMaskView.displayContentView()
     }

@@ -67,3 +67,13 @@ extension SCNetworkManager{
         }
     }
 }
+extension SCNetworkManager{
+    func getClanData(tag: String, completion:@escaping (_ dict: [String: Any]?,_ isSuccess: Bool)->()){
+        let urlString = "https://api.clashroyale.com/v1/clans/\((tag as NSString).replacingOccurrences(of: "#", with: "%23"))"
+        let params = ["authorization": "Bearer \(HelperCommon.apiKey)"]
+        request(urlString: urlString, method: HTTPMethod.get, params: params) { (res, isSuccess, _, _) in
+        let dict = res as? [String: Any]
+        completion(dict, isSuccess)
+        }
+    }
+}

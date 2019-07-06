@@ -32,6 +32,9 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nlT-AG-c1C">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.41713827850000001" green="0.622612834" blue="0.94908612969999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <connections>
                                     <action selector="clickMaskButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="P46-Zr-x7D"/>
                                 </connections>
@@ -72,7 +75,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFY-ve-JXv">
                                         <rect key="frame" x="11" y="47" width="37.5" height="13.5"/>
                                         <fontDescription key="fontDescription" name="Supercell-Magic" family="Supercell-Magic" pointSize="12"/>
-                                        <color key="textColor" red="0.16476398710000001" green="0.39028275010000002" blue="0.26271879669999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="textColor" red="0.41713827850000001" green="0.622612834" blue="0.94908612969999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="25K-XN-SGQ">
@@ -82,13 +85,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Count:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E8T-Ok-LOU">
-                                        <rect key="frame" x="132" y="47" width="43" height="13.5"/>
+                                        <rect key="frame" x="143.5" y="47" width="43" height="13.5"/>
                                         <fontDescription key="fontDescription" name="Supercell-Magic" family="Supercell-Magic" pointSize="12"/>
                                         <color key="textColor" red="0.96116107699999997" green="0.76694005730000003" blue="0.2623715103" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r4c-nI-mbe">
-                                        <rect key="frame" x="178" y="40.5" width="19" height="26"/>
+                                        <rect key="frame" x="189.5" y="40.5" width="19" height="26"/>
                                         <fontDescription key="fontDescription" name="JandaManateeBubble" family="Janda Manatee Bubble" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -97,7 +100,6 @@
                                 <constraints>
                                     <constraint firstItem="eFY-ve-JXv" firstAttribute="leading" secondItem="Nab-s0-ZOH" secondAttribute="leading" constant="3" id="0Me-QE-vhg"/>
                                     <constraint firstItem="ipF-Aq-y3Y" firstAttribute="leading" secondItem="eZJ-vS-HDm" secondAttribute="leading" constant="5" id="0hT-pM-Eje"/>
-                                    <constraint firstItem="E8T-Ok-LOU" firstAttribute="trailing" secondItem="eZJ-vS-HDm" secondAttribute="centerX" id="3QA-x1-yFQ"/>
                                     <constraint firstItem="eDU-gG-6cB" firstAttribute="leading" secondItem="ThL-4C-cp4" secondAttribute="trailing" constant="3" id="42h-bi-2Gj"/>
                                     <constraint firstItem="ThL-4C-cp4" firstAttribute="centerY" secondItem="eFY-ve-JXv" secondAttribute="centerY" id="4Ma-eu-JCh"/>
                                     <constraint firstAttribute="trailing" secondItem="ipF-Aq-y3Y" secondAttribute="trailing" constant="5" id="6c2-1a-h5K"/>
@@ -113,6 +115,7 @@
                                     <constraint firstItem="r4c-nI-mbe" firstAttribute="centerY" secondItem="E8T-Ok-LOU" secondAttribute="centerY" id="SWv-e8-UPo"/>
                                     <constraint firstAttribute="height" constant="480" id="SdA-yF-QeE"/>
                                     <constraint firstAttribute="bottom" secondItem="ipF-Aq-y3Y" secondAttribute="bottom" constant="5" id="Ydc-UI-Y1N"/>
+                                    <constraint firstItem="E8T-Ok-LOU" firstAttribute="centerX" secondItem="eZJ-vS-HDm" secondAttribute="centerX" constant="-10" id="Zau-KT-PbF"/>
                                     <constraint firstItem="25K-XN-SGQ" firstAttribute="leading" secondItem="eFY-ve-JXv" secondAttribute="trailing" constant="3" id="d9a-Dp-BYi"/>
                                     <constraint firstItem="ipF-Aq-y3Y" firstAttribute="top" secondItem="Nab-s0-ZOH" secondAttribute="bottom" constant="5" id="e9c-DZ-xig"/>
                                     <constraint firstItem="eDU-gG-6cB" firstAttribute="centerY" secondItem="ThL-4C-cp4" secondAttribute="centerY" id="fnd-V4-l9e"/>

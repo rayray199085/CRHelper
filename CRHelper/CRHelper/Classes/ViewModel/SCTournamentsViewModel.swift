@@ -8,21 +8,11 @@
 
 import Foundation
 
-class SCTournamentsViewModel{
+class SCTournamentsViewModel: SCBaseViewModel{
     var tournamentsData: SCTournamentsData?
     var detailsData: SCTournamentsDetailsData?
-    var playerData: SCPlayerData?
-    var cardDataItems: [SCCardsDataItem]?
-    var deckDataItems: [SCCardsDataItem]?
-    var chestData: SCPlayerChestData?
     
-    func resetPlayData(){
-        chestData = nil
-        playerData = nil
-        cardDataItems = nil
-        deckDataItems = nil
-    }
-    
+//    load tournament basic info
     func loadTournamentsData(name: String?, completion:@escaping (_ isSuccess: Bool)->()){
         guard let name = name else{
             completion(false)
@@ -38,14 +28,10 @@ class SCTournamentsViewModel{
                 completion(false)
                 return
             }
-           
-            let dateFormatter = DateFormatter()
-            dateFormatter.locale = Locale(identifier: "en_US")
-            dateFormatter.dateFormat = "yyyyMMdd'T'HHmmss.SSSZ"
-    
+               
             for item in tournamentsData.items ?? []{
                 guard let createdTime = item.createdTime,
-                     var date = dateFormatter.date(from: createdTime) else{
+                     var date = self.dateFormatter.date(from: createdTime) else{
                     continue
                 }
                 date.addTimeInterval(item.duration + item.preparationDuration)
@@ -74,6 +60,7 @@ class SCTournamentsViewModel{
         return height
     }
 }
+// load tournament details
 extension SCTournamentsViewModel{
     func loadTournamentsDetailsData(tag: String?, completion:@escaping (_ isSuccess: Bool)->()){
         guard let tag = tag else{
@@ -95,84 +82,4 @@ extension SCTournamentsViewModel{
         }
     }
 }
-extension SCTournamentsViewModel{
-    func loadPlayerData(tag: String?, completion:@escaping (_ isSuccess: Bool)->()){
-        guard let tag = tag else{
-            completion(false)
-            return
-        }
-        SCNetworkManager.shared.getPlayerData(tag: tag) { (dict, isSuccess) in
-            if !isSuccess{
-                completion(false)
-                return
-            }
-            guard let dict = dict,
-                  let playerData = SCPlayerData.yy_model(with: dict) else{
-                    completion(false)
-                    return
-            }
-            self.playerData = playerData
-            completion(true)
-        }
-    }
-}
-extension SCTournamentsViewModel{
-    func loadCardsData(completion:@escaping (_ isSuccess: Bool)->()){
-        let group = DispatchGroup()
-        for item in playerData?.cards ?? []{
-            guard let urlString = item.iconUrls?.medium else{
-                continue
-            }
-            group.enter()
-            SCNetworkManager.shared.getCardImage(imageUrlString: urlString, completion: { (image) in
-                item.iconUrls?.cardImage = image
-                group.leave()
-            })
-        }
-        group.notify(queue: DispatchQueue.main, execute: {
-            self.cardDataItems = self.playerData?.cards
-            completion(true)
-        })
-    }
-}
 
-extension SCTournamentsViewModel{
-    func loadDeckData(completion:@escaping (_ isSuccess: Bool)->()){
-        let group = DispatchGroup()
-        for item in playerData?.currentDeck ?? []{
-            guard let urlString = item.iconUrls?.medium else{
-                continue
-            }
-            group.enter()
-            SCNetworkManager.shared.getCardImage(imageUrlString: urlString, completion: { (image) in
-                item.iconUrls?.cardImage = image
-                group.leave()
-            })
-        }
-        group.notify(queue: DispatchQueue.main, execute: {
-            self.deckDataItems = self.playerData?.currentDeck
-            completion(true)
-        })
-    }
-}
-extension SCTournamentsViewModel{
-    func loadChestData(completion:@escaping (_ isSuccess: Bool)->()){
-        guard let tag = playerData?.tag else{
-            completion(false)
-            return
-        }
-        SCNetworkManager.shared.getPlayerChest(tag: tag) { (dict, isSuccess) in
-            if !isSuccess{
-                completion(false)
-                return
-            }
-            guard let dict = dict,
-                  let chestData = SCPlayerChestData.yy_model(with: dict) else{
-                    completion(false)
-                    return
-            }
-            self.chestData = chestData
-            completion(true)
-        }
-    }
-}

@@ -42,4 +42,8 @@ extension UITableView {
     enum scrollsTo {
         case top,bottom
     }
+    
+    func hideSeparatorWhenEmpty(count: Int){
+        separatorStyle = count > 0 ? UITableViewCell.SeparatorStyle.singleLine : .none
+    }
 }
