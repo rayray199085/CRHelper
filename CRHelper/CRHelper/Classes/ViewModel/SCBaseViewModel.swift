@@ -21,6 +21,8 @@ class SCBaseViewModel: NSObject {
     var chestData: SCPlayerChestData?
     // for clan info
     var clanData: SCClanData?
+    var pastWarsData: SCClanPastWarsData?
+    var warData: SCClanWarData?
     
     func resetPlayData(){
         playerData = nil
@@ -140,6 +142,99 @@ extension SCBaseViewModel{
                 member.lastSeenString = date.sinaDateStringDescription
             }
             self.clanData = clanData
+            completion(true)
+        }
+    }
+}
+extension SCBaseViewModel{
+    func loadClanPastWarsData(completion:@escaping (_ isSuccess: Bool)->()){
+        guard let tag = self.clanData?.tag else{
+            completion(false)
+            return
+        }
+        SCNetworkManager.shared.getClanPastWarsData(tag: tag) { (dict, isSuccess) in
+            if !isSuccess{
+                completion(false)
+                return
+            }
+            guard let dict = dict,
+                  let pastWarsData = SCClanPastWarsData.yy_model(with: dict) else{
+                completion(false)
+                return
+            }
+            for item in pastWarsData.items ?? []{
+                guard let createdDate = item.createdDate,
+                     let date = self.dateFormatter.date(from: createdDate)else{
+                    continue
+                }
+                item.createdDateString = date.sinaDateStringDescription
+                
+                var participantRank = 1
+                for participant in item.participants ?? [] {
+                    participant.rank = participantRank
+                    participantRank += 1
+                }
+                var standingRank = 1
+                for standing in item.standings ?? []{
+                    standing.clan?.rank = standingRank
+                    standingRank += 1
+                }
+            }
+            self.pastWarsData = pastWarsData
+            completion(true)
+        }
+    }
+}
+extension SCBaseViewModel{
+    func loadClanWarData(completion:@escaping (_ isSuccess: Bool)->()){
+        guard let tag = self.clanData?.tag else{
+            completion(false)
+            return
+        }
+        SCNetworkManager.shared.getClanWarsData(tag: tag) { (dict, isSuccess) in
+            if !isSuccess{
+                completion(false)
+                return
+            }
+            guard let dict = dict,
+                  let warData = SCClanWarData.yy_model(with: dict) else{
+                completion(false)
+                return
+            }
+            warData.participants?.sort(by: { $0.cardsEarned > $1.cardsEarned})
+            var dateString: String?
+            if warData.collectionEndTime != nil && (warData.collectionEndTime?.count ?? 0) > 0{
+                dateString = warData.collectionEndTime
+            }else{
+                dateString = warData.warEndTime
+            }
+            if let dateString = dateString,
+               let date = self.dateFormatter.date(from: dateString){
+                print(date)
+                let remainingTimeInterval = date.timeIntervalSinceNow
+                warData.endTimeString = remainingTimeInterval.stringTime
+            }
+            var position = -1
+            if let state = warData.state {
+                for (index,c) in state.enumerated(){
+                    if c.isUppercase{
+                        position = index
+                        break
+                    }
+                }
+                if position != -1{
+                    let leftSub = (state as NSString).substring(with: NSRange(location: 0, length: position))
+                    let rightSub = (state as NSString).substring(from: position)
+                    warData.state = "\(leftSub) \(rightSub)"
+                }
+            }
+            warData.state?.capitalizeFirstLetter()
+            var participantRank = 1
+            for participant in warData.participants ?? []{
+                participant.rank = participantRank
+                participantRank += 1
+            }
+            self.warData = warData
             completion(true)
         }
     }

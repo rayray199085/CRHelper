@@ -8,75 +8,97 @@
 
 import UIKit
 import SVProgressHUD
+import DLSlideView
 
-private let reuseIdentifier = "member_cell"
 class SCClanDetailsViewController: UIViewController {
     var viewModel: SCBaseViewModel?
-    
-    private let detailsInfoView = SCClanDetailsInfoView.infoView()
-    private let tableView = UITableView(frame: UIScreen.main.bounds)
+    @IBOutlet weak var tabedSlideView: DLTabedSlideView!
+    private let memberListController = SCClanMemberListController()
+    private let detailsInfoController = SCClanDetailsInfoController()
+    private let warController = SCClanWarController()
+    private let pastWarsController = SCClanPastWarsViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
     }
     
-    func showPlayerInfo(tag: String?){
-        let vc = SCPlayerDetailsViewController()
-        vc.title = tag
-        vc.viewModel = viewModel
-        SVProgressHUD.show()
-        viewModel?.loadPlayerData(tag: tag, completion: { [weak self] (isSuccess) in
-            self?.navigationController?.pushViewController(vc, animated: true)
-            SVProgressHUD.dismiss()
-        })
-    }
-    
     deinit {
         viewModel?.clanData = nil
-    }
-    
-    @objc private func showClanDetails(){
-        navigationItem.rightBarButtonItem?.isEnabled = false
-        if detailsInfoView.frame.origin.x == UIScreen.screenWidth(){
-            detailsInfoView.addPopHorizontalAnimation(fromValue: UIScreen.screenWidth() * 3 / 2, toValue: UIScreen.screenWidth() / 2, springBounciness: 8, springSpeed: 8, delay: 0) { [weak self](_, _) in
-                    self?.navigationItem.rightBarButtonItem?.isEnabled = true
-                }
-        }else{
-            detailsInfoView.addPopHorizontalAnimation(fromValue: UIScreen.screenWidth() / 2, toValue: UIScreen.screenWidth() * 3 / 2, springBounciness: 8, springSpeed: 8, delay: 0) { [weak self](_, _) in
-                self?.navigationItem.rightBarButtonItem?.isEnabled = true
-            }
-        }
     }
 }
 private extension SCClanDetailsViewController{
     func setupUI(){
-        view.addSubview(tableView)
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.rowHeight = 175
-        tableView.register(UINib(nibName: "SCClanMemberListCell", bundle: nil), forCellReuseIdentifier: reuseIdentifier)
+        setupTabedSlideView()
+    }
+    func setupTabedSlideView(){
+        tabedSlideView.baseViewController = self
+        tabedSlideView.delegate = self
+        tabedSlideView.tabItemNormalColor = UIColor.darkGray
+        tabedSlideView.tabItemSelectedColor = HelperCommon.barColor
+        tabedSlideView.tabbarTrackColor = HelperCommon.barColor
+        tabedSlideView.tabbarBottomSpacing = 3.0
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Clan", fontSize: 16, target: self, action: #selector(showClanDetails), isBack: false)
+        let detailsInfoImage = UIImage(named: "details")?.modifyImageSize(size: CGSize(width: 25, height: 25), backgroundColor:UIColor.white)
         
-        detailsInfoView.frame.origin.x = UIScreen.screenWidth()
-        view.addSubview(detailsInfoView)
-        detailsInfoView.viewModel = viewModel
+        let memberListImage = UIImage(named: "member")?.modifyImageSize(size: CGSize(width: 25, height: 25), backgroundColor:UIColor.white)
+        
+        let warImage = UIImage(named: "war")?.modifyImageSize(size: CGSize(width: 25, height: 25), backgroundColor:UIColor.white)
+        
+        let pastWarsImage = UIImage(named: "past_war")?.modifyImageSize(size: CGSize(width: 25, height: 25), backgroundColor:UIColor.white)
+        
+        guard let detailsInfoTab = DLTabedbarItem(title: "Details", image: detailsInfoImage, selectedImage: detailsInfoImage) else{
+            return
+        }
+        
+        guard let memberListTab = DLTabedbarItem(title: "Member", image: memberListImage, selectedImage: memberListImage) else{
+                return
+        }
+        
+        guard let warTab = DLTabedbarItem(title: "War", image: warImage, selectedImage: warImage) else{
+            return
+        }
+        
+        guard let pastWarTab = DLTabedbarItem(title: "Past Wars", image: pastWarsImage, selectedImage: pastWarsImage) else{
+            return
+        }
+        
+        tabedSlideView.tabbarItems = [detailsInfoTab,memberListTab,warTab,pastWarTab]
+        tabedSlideView.buildTabbar()
+        tabedSlideView.selectedIndex = 0
     }
 }
-extension SCClanDetailsViewController: UITableViewDelegate, UITableViewDataSource{
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let memberCount = viewModel?.clanData?.memberList?.count ?? 0
-        tableView.hideSeparatorWhenEmpty(count: memberCount)
-        return memberCount
+extension SCClanDetailsViewController: DLTabedSlideViewDelegate{
+    func numberOfTabs(in sender: DLTabedSlideView!) -> Int {
+        return 4
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! SCClanMemberListCell
-        cell.member = viewModel?.clanData?.memberList?[indexPath.row]
-        return cell
+    func dlTabedSlideView(_ sender: DLTabedSlideView!, controllerAt index: Int) -> UIViewController? {
+        switch index {
+        case 0:
+            return detailsInfoController
+        case 1:
+            return memberListController
+        case 2:
+            return warController
+        case 3:
+            return pastWarsController
+        default:
+            return nil
+        }
     }
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        showPlayerInfo(tag: viewModel?.clanData?.memberList?[indexPath.row].tag)
+    func dlTabedSlideView(_ sender: DLTabedSlideView!, didSelectedAt index: Int) {
+        switch index {
+        case 0:
+            detailsInfoController.viewModel = viewModel
+        case 1:
+            memberListController.viewModel = viewModel
+        case 2:
+            warController.viewModel = viewModel
+        case 3:
+            pastWarsController.viewModel = viewModel
+        default:
+            break
+        }
     }
 }

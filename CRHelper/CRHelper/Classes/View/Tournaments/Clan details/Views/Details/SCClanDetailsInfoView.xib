@@ -125,7 +125,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AwY-m1-iet">
-                    <rect key="frame" x="178" y="249" width="42" height="21"/>
+                    <rect key="frame" x="199" y="249" width="42" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
@@ -161,7 +161,7 @@
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trophy" translatesAutoresizingMaskIntoConstraints="NO" id="42n-pb-gpI">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clan_trophy" translatesAutoresizingMaskIntoConstraints="NO" id="42n-pb-gpI">
                     <rect key="frame" x="162.5" y="193.5" width="18" height="18"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="18" id="Ioh-AB-byO"/>
@@ -173,6 +173,13 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="18" id="EPm-a6-wIH"/>
                         <constraint firstAttribute="width" constant="18" id="IMP-Cw-zu9"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="donation" translatesAutoresizingMaskIntoConstraints="NO" id="MsG-l5-lIs">
+                    <rect key="frame" x="178" y="250.5" width="18" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="18" id="oYF-Zd-4A0"/>
+                        <constraint firstAttribute="height" constant="18" id="tLf-iw-BT3"/>
                     </constraints>
                 </imageView>
             </subviews>
@@ -191,6 +198,7 @@
                 <constraint firstItem="x7g-Vr-Sb9" firstAttribute="top" secondItem="bDq-fn-t0s" secondAttribute="bottom" constant="8" id="69P-dF-8e0"/>
                 <constraint firstItem="IlT-Ln-1Zg" firstAttribute="leading" secondItem="x7g-Vr-Sb9" secondAttribute="trailing" constant="3" id="6Wz-DJ-tee"/>
                 <constraint firstItem="uOh-Kl-Of9" firstAttribute="leading" secondItem="xAF-H9-3xp" secondAttribute="leading" id="6vP-0w-1fL"/>
+                <constraint firstItem="MsG-l5-lIs" firstAttribute="centerY" secondItem="ZYi-Kc-mmX" secondAttribute="centerY" id="7ly-Fz-d18"/>
                 <constraint firstItem="tdX-2b-egD" firstAttribute="top" secondItem="ZYi-Kc-mmX" secondAttribute="bottom" constant="8" id="9sl-Zs-rev"/>
                 <constraint firstItem="UQc-7E-ofw" firstAttribute="centerY" secondItem="xAF-H9-3xp" secondAttribute="centerY" id="CSk-Ep-nRM"/>
                 <constraint firstItem="xHL-kn-K1b" firstAttribute="leading" secondItem="xAF-H9-3xp" secondAttribute="leading" id="DX7-Wp-8UA"/>
@@ -221,15 +229,16 @@
                 <constraint firstItem="3j9-6S-Z5A" firstAttribute="centerY" secondItem="uOh-Kl-Of9" secondAttribute="centerY" id="d7H-eM-f32"/>
                 <constraint firstItem="MiJ-CB-i1Y" firstAttribute="leading" secondItem="0MO-RI-XOW" secondAttribute="trailing" constant="3" id="d8Q-cs-EZP"/>
                 <constraint firstItem="zE9-g4-CRs" firstAttribute="top" secondItem="0MO-RI-XOW" secondAttribute="bottom" constant="8" id="eOE-q6-EiY"/>
+                <constraint firstItem="AwY-m1-iet" firstAttribute="leading" secondItem="MsG-l5-lIs" secondAttribute="trailing" constant="3" id="ekW-JC-kLn"/>
                 <constraint firstItem="glj-fM-Bm3" firstAttribute="top" secondItem="xAF-H9-3xp" secondAttribute="bottom" constant="8" id="fE3-6v-dbh"/>
                 <constraint firstItem="YA2-Zv-eW1" firstAttribute="leading" secondItem="42n-pb-gpI" secondAttribute="trailing" constant="3" id="g9W-cb-cky"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Gst-gI-gdx" secondAttribute="trailing" constant="5" id="gK5-F9-m88"/>
                 <constraint firstItem="3j9-6S-Z5A" firstAttribute="leading" secondItem="f9w-SR-MLm" secondAttribute="trailing" constant="3" id="h0T-aP-YXK"/>
                 <constraint firstItem="fYU-Rx-lWi" firstAttribute="top" secondItem="x7g-Vr-Sb9" secondAttribute="bottom" constant="8" id="igv-Uw-irB"/>
                 <constraint firstItem="ZYi-Kc-mmX" firstAttribute="top" secondItem="uOh-Kl-Of9" secondAttribute="bottom" constant="8" id="kuf-pc-KFG"/>
-                <constraint firstItem="AwY-m1-iet" firstAttribute="leading" secondItem="ZYi-Kc-mmX" secondAttribute="trailing" constant="3" id="l6c-QB-JnC"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Gst-gI-gdx" secondAttribute="bottom" constant="5" id="n2i-gm-F72"/>
                 <constraint firstItem="fYU-Rx-lWi" firstAttribute="leading" secondItem="xAF-H9-3xp" secondAttribute="leading" id="p9a-85-Zlm"/>
+                <constraint firstItem="MsG-l5-lIs" firstAttribute="leading" secondItem="ZYi-Kc-mmX" secondAttribute="trailing" constant="3" id="pgp-PK-O7D"/>
                 <constraint firstItem="42n-pb-gpI" firstAttribute="centerY" secondItem="fYU-Rx-lWi" secondAttribute="centerY" id="wng-bO-SNw"/>
                 <constraint firstItem="uOh-Kl-Of9" firstAttribute="top" secondItem="fYU-Rx-lWi" secondAttribute="bottom" constant="8" id="xPG-vH-Zeu"/>
             </constraints>
@@ -252,6 +261,8 @@
         </view>
     </objects>
     <resources>
+        <image name="clan_trophy" width="56" height="56"/>
+        <image name="donation" width="56" height="56"/>
         <image name="trophy" width="125" height="125"/>
     </resources>
 </document>

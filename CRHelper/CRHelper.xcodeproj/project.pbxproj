@@ -29,6 +29,28 @@
 		0D2CCB7B22CF358C00668A1F /* SCPlayerChestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D2CCB7A22CF358C00668A1F /* SCPlayerChestCell.xib */; };
 		0D2CCB7D22CF37DF00668A1F /* SCPlayerChest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2CCB7C22CF37DF00668A1F /* SCPlayerChest.swift */; };
 		0D2CCB7F22CF383300668A1F /* SCPlayerChestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2CCB7E22CF383300668A1F /* SCPlayerChestData.swift */; };
+		0D472AC122D151040068C1DB /* SCClanMemberListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D472AC022D151040068C1DB /* SCClanMemberListController.swift */; };
+		0D472AC322D152E40068C1DB /* SCClanDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D472AC222D152E40068C1DB /* SCClanDetailsViewController.xib */; };
+		0D472AC522D156680068C1DB /* SCClanDetailsInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D472AC422D156680068C1DB /* SCClanDetailsInfoController.swift */; };
+		0D472AC722D164DB0068C1DB /* SCClanMemberListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D472AC622D164DB0068C1DB /* SCClanMemberListController.xib */; };
+		0D472ACA22D174590068C1DB /* SCClanPastWarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D472AC922D174590068C1DB /* SCClanPastWarsViewController.swift */; };
+		0D472ACC22D174720068C1DB /* SCClanPastWarsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D472ACB22D174720068C1DB /* SCClanPastWarsViewController.xib */; };
+		0D472ACE22D176C40068C1DB /* SCClanPastWarsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D472ACD22D176C40068C1DB /* SCClanPastWarsCell.swift */; };
+		0D472AD022D176D10068C1DB /* SCClanPastWarsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D472ACF22D176D10068C1DB /* SCClanPastWarsCell.xib */; };
+		0D472AD222D17DF40068C1DB /* SCClanPastWarsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D472AD122D17DF40068C1DB /* SCClanPastWarsData.swift */; };
+		0D472AD422D17E210068C1DB /* SCClanPastWarsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D472AD322D17E210068C1DB /* SCClanPastWarsItem.swift */; };
+		0D472AD622D17EB00068C1DB /* SCClanPastWarsParticipant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D472AD522D17EB00068C1DB /* SCClanPastWarsParticipant.swift */; };
+		0D472AD822D17F610068C1DB /* SCClanPastWarsStanding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D472AD722D17F610068C1DB /* SCClanPastWarsStanding.swift */; };
+		0D472ADA22D181740068C1DB /* SCClanPastWarsClan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D472AD922D181740068C1DB /* SCClanPastWarsClan.swift */; };
+		0D472ADC22D188640068C1DB /* SCClanPastWarsStandingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D472ADB22D188640068C1DB /* SCClanPastWarsStandingCell.swift */; };
+		0D472ADE22D188730068C1DB /* SCClanPastWarsStandingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D472ADD22D188730068C1DB /* SCClanPastWarsStandingCell.xib */; };
+		0D472AE022D1AF440068C1DB /* SCClanPastWarsParticipantsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D472ADF22D1AF440068C1DB /* SCClanPastWarsParticipantsView.swift */; };
+		0D472AE222D1AFB80068C1DB /* SCClanPastWarsParticipantsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D472AE122D1AFB80068C1DB /* SCClanPastWarsParticipantsView.xib */; };
+		0D472AE422D1B3920068C1DB /* SCClanPastWarsParticipantsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D472AE322D1B3920068C1DB /* SCClanPastWarsParticipantsCell.swift */; };
+		0D472AE622D1B3AE0068C1DB /* SCClanPastWarsParticipantsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D472AE522D1B3AE0068C1DB /* SCClanPastWarsParticipantsCell.xib */; };
+		0D472AE922D1C7640068C1DB /* SCClanWarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D472AE822D1C7640068C1DB /* SCClanWarController.swift */; };
+		0D472AEB22D1C7710068C1DB /* SCClanWarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D472AEA22D1C7710068C1DB /* SCClanWarController.xib */; };
+		0D472AED22D1CC6B0068C1DB /* SCClanWarData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D472AEC22D1CC6B0068C1DB /* SCClanWarData.swift */; };
 		0D5B481622CC652B00BBF68E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5B481522CC652B00BBF68E /* AppDelegate.swift */; };
 		0D5B481D22CC652D00BBF68E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D5B481C22CC652D00BBF68E /* Assets.xcassets */; };
 		0D5B482022CC652D00BBF68E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D5B481E22CC652D00BBF68E /* LaunchScreen.storyboard */; };
@@ -154,6 +176,28 @@
 		0D2CCB7A22CF358C00668A1F /* SCPlayerChestCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCPlayerChestCell.xib; sourceTree = "<group>"; };
 		0D2CCB7C22CF37DF00668A1F /* SCPlayerChest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCPlayerChest.swift; sourceTree = "<group>"; };
 		0D2CCB7E22CF383300668A1F /* SCPlayerChestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCPlayerChestData.swift; sourceTree = "<group>"; };
+		0D472AC022D151040068C1DB /* SCClanMemberListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCClanMemberListController.swift; sourceTree = "<group>"; };
+		0D472AC222D152E40068C1DB /* SCClanDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCClanDetailsViewController.xib; sourceTree = "<group>"; };
+		0D472AC422D156680068C1DB /* SCClanDetailsInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCClanDetailsInfoController.swift; sourceTree = "<group>"; };
+		0D472AC622D164DB0068C1DB /* SCClanMemberListController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCClanMemberListController.xib; sourceTree = "<group>"; };
+		0D472AC922D174590068C1DB /* SCClanPastWarsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCClanPastWarsViewController.swift; sourceTree = "<group>"; };
+		0D472ACB22D174720068C1DB /* SCClanPastWarsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCClanPastWarsViewController.xib; sourceTree = "<group>"; };
+		0D472ACD22D176C40068C1DB /* SCClanPastWarsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCClanPastWarsCell.swift; sourceTree = "<group>"; };
+		0D472ACF22D176D10068C1DB /* SCClanPastWarsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCClanPastWarsCell.xib; sourceTree = "<group>"; };
+		0D472AD122D17DF40068C1DB /* SCClanPastWarsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCClanPastWarsData.swift; sourceTree = "<group>"; };
+		0D472AD322D17E210068C1DB /* SCClanPastWarsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCClanPastWarsItem.swift; sourceTree = "<group>"; };
+		0D472AD522D17EB00068C1DB /* SCClanPastWarsParticipant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCClanPastWarsParticipant.swift; sourceTree = "<group>"; };
+		0D472AD722D17F610068C1DB /* SCClanPastWarsStanding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCClanPastWarsStanding.swift; sourceTree = "<group>"; };
+		0D472AD922D181740068C1DB /* SCClanPastWarsClan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCClanPastWarsClan.swift; sourceTree = "<group>"; };
+		0D472ADB22D188640068C1DB /* SCClanPastWarsStandingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCClanPastWarsStandingCell.swift; sourceTree = "<group>"; };
+		0D472ADD22D188730068C1DB /* SCClanPastWarsStandingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCClanPastWarsStandingCell.xib; sourceTree = "<group>"; };
+		0D472ADF22D1AF440068C1DB /* SCClanPastWarsParticipantsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCClanPastWarsParticipantsView.swift; sourceTree = "<group>"; };
+		0D472AE122D1AFB80068C1DB /* SCClanPastWarsParticipantsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCClanPastWarsParticipantsView.xib; sourceTree = "<group>"; };
+		0D472AE322D1B3920068C1DB /* SCClanPastWarsParticipantsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCClanPastWarsParticipantsCell.swift; sourceTree = "<group>"; };
+		0D472AE522D1B3AE0068C1DB /* SCClanPastWarsParticipantsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCClanPastWarsParticipantsCell.xib; sourceTree = "<group>"; };
+		0D472AE822D1C7640068C1DB /* SCClanWarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCClanWarController.swift; sourceTree = "<group>"; };
+		0D472AEA22D1C7710068C1DB /* SCClanWarController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCClanWarController.xib; sourceTree = "<group>"; };
+		0D472AEC22D1CC6B0068C1DB /* SCClanWarData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCClanWarData.swift; sourceTree = "<group>"; };
 		0D5B481222CC652B00BBF68E /* CRHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CRHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D5B481522CC652B00BBF68E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D5B481C22CC652D00BBF68E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -364,6 +408,32 @@
 				0D2CCB7A22CF358C00668A1F /* SCPlayerChestCell.xib */,
 			);
 			path = Chest;
+			sourceTree = "<group>";
+		};
+		0D472AC822D1741D0068C1DB /* Past Wars */ = {
+			isa = PBXGroup;
+			children = (
+				0D472AC922D174590068C1DB /* SCClanPastWarsViewController.swift */,
+				0D472ACB22D174720068C1DB /* SCClanPastWarsViewController.xib */,
+				0D472ACD22D176C40068C1DB /* SCClanPastWarsCell.swift */,
+				0D472ACF22D176D10068C1DB /* SCClanPastWarsCell.xib */,
+				0D472ADB22D188640068C1DB /* SCClanPastWarsStandingCell.swift */,
+				0D472ADD22D188730068C1DB /* SCClanPastWarsStandingCell.xib */,
+				0D472ADF22D1AF440068C1DB /* SCClanPastWarsParticipantsView.swift */,
+				0D472AE122D1AFB80068C1DB /* SCClanPastWarsParticipantsView.xib */,
+				0D472AE322D1B3920068C1DB /* SCClanPastWarsParticipantsCell.swift */,
+				0D472AE522D1B3AE0068C1DB /* SCClanPastWarsParticipantsCell.xib */,
+			);
+			path = "Past Wars";
+			sourceTree = "<group>";
+		};
+		0D472AE722D1C6DB0068C1DB /* War */ = {
+			isa = PBXGroup;
+			children = (
+				0D472AE822D1C7640068C1DB /* SCClanWarController.swift */,
+				0D472AEA22D1C7710068C1DB /* SCClanWarController.xib */,
+			);
+			path = War;
 			sourceTree = "<group>";
 		};
 		0D5B480922CC652B00BBF68E = {
@@ -716,6 +786,7 @@
 			children = (
 				0DE8D41A22D0305E00797B3C /* Views */,
 				0DE8D40D22D01B4D00797B3C /* SCClanDetailsViewController.swift */,
+				0D472AC222D152E40068C1DB /* SCClanDetailsViewController.xib */,
 			);
 			path = "Clan details";
 			sourceTree = "<group>";
@@ -726,6 +797,12 @@
 				0DE8D41122D0236700797B3C /* SCClanData.swift */,
 				0DE8D41422D0240300797B3C /* SCClanLocation.swift */,
 				0DE8D41622D0252100797B3C /* SCClanMember.swift */,
+				0D472AD122D17DF40068C1DB /* SCClanPastWarsData.swift */,
+				0D472AD322D17E210068C1DB /* SCClanPastWarsItem.swift */,
+				0D472AD522D17EB00068C1DB /* SCClanPastWarsParticipant.swift */,
+				0D472AD722D17F610068C1DB /* SCClanPastWarsStanding.swift */,
+				0D472AD922D181740068C1DB /* SCClanPastWarsClan.swift */,
+				0D472AEC22D1CC6B0068C1DB /* SCClanWarData.swift */,
 			);
 			path = Clan;
 			sourceTree = "<group>";
@@ -733,6 +810,8 @@
 		0DE8D41A22D0305E00797B3C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0D472AE722D1C6DB0068C1DB /* War */,
+				0D472AC822D1741D0068C1DB /* Past Wars */,
 				0DE8D42022D0546A00797B3C /* Details */,
 				0DE8D41B22D0307300797B3C /* Member List */,
 			);
@@ -744,6 +823,8 @@
 			children = (
 				0DE8D41C22D0308B00797B3C /* SCClanMemberListCell.swift */,
 				0DE8D41E22D030A600797B3C /* SCClanMemberListCell.xib */,
+				0D472AC022D151040068C1DB /* SCClanMemberListController.swift */,
+				0D472AC622D164DB0068C1DB /* SCClanMemberListController.xib */,
 			);
 			path = "Member List";
 			sourceTree = "<group>";
@@ -753,6 +834,7 @@
 			children = (
 				0DE8D42122D0548A00797B3C /* SCClanDetailsInfoView.swift */,
 				0DE8D42322D054FB00797B3C /* SCClanDetailsInfoView.xib */,
+				0D472AC422D156680068C1DB /* SCClanDetailsInfoController.swift */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -882,6 +964,7 @@
 			files = (
 				0D5B48D122CC788800BBF68E /* Supercell-Magic.ttf in Resources */,
 				0D5B48C122CC658700BBF68E /* main.json in Resources */,
+				0D472ACC22D174720068C1DB /* SCClanPastWarsViewController.xib in Resources */,
 				0D2CCB7222CF221E00668A1F /* SCPlayerAchievementCell.xib in Resources */,
 				0DD0B51822CDB4220099546C /* SCTournamentTableViewCell.xib in Resources */,
 				0D2CCB6022CEE30C00668A1F /* SCPlayerStatsViewController.storyboard in Resources */,
@@ -889,18 +972,25 @@
 				0D5B482022CC652D00BBF68E /* LaunchScreen.storyboard in Resources */,
 				0D5B481D22CC652D00BBF68E /* Assets.xcassets in Resources */,
 				0D5B48E822CC855000BBF68E /* SCCardsCollectionViewCell.xib in Resources */,
+				0D472AD022D176D10068C1DB /* SCClanPastWarsCell.xib in Resources */,
+				0D472AC722D164DB0068C1DB /* SCClanMemberListController.xib in Resources */,
 				0D2CCB4922CEC56200668A1F /* SCTournamentPlayerCell.xib in Resources */,
 				0D2CCB7722CF2B6C00668A1F /* SCPlayerChestView.xib in Resources */,
 				0D2CCB7B22CF358C00668A1F /* SCPlayerChestCell.xib in Resources */,
+				0D472AEB22D1C7710068C1DB /* SCClanWarController.xib in Resources */,
 				0D2CCB4E22CED2DB00668A1F /* SCPlayerDetailsViewController.xib in Resources */,
+				0D472ADE22D188730068C1DB /* SCClanPastWarsStandingCell.xib in Resources */,
 				0DD0B52822CDD9150099546C /* SCTournamentsDetailsController.xib in Resources */,
 				0DD0B51422CD933C0099546C /* SCTournamentsDisplayView.xib in Resources */,
 				0DE8D41F22D030A600797B3C /* SCClanMemberListCell.xib in Resources */,
 				0DD0B50F22CD7C290099546C /* JandaManateeBubble.ttf in Resources */,
 				0D5B48E022CC7DF300BBF68E /* SCCardsDisplayView.xib in Resources */,
+				0D472AE222D1AFB80068C1DB /* SCClanPastWarsParticipantsView.xib in Resources */,
 				0D2CCB6E22CF1DB900668A1F /* SCPlayerAchievementsController.xib in Resources */,
 				0D5B48B722CC658700BBF68E /* SCMoreTableViewCell.xib in Resources */,
 				0DE8D42422D054FB00797B3C /* SCClanDetailsInfoView.xib in Resources */,
+				0D472AE622D1B3AE0068C1DB /* SCClanPastWarsParticipantsCell.xib in Resources */,
+				0D472AC322D152E40068C1DB /* SCClanDetailsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1002,18 +1092,22 @@
 				0D5B48A822CC658700BBF68E /* UIImage+extension.swift in Sources */,
 				0D5B48AE22CC658700BBF68E /* UITableViewCell+extension.swift in Sources */,
 				0D5B489522CC658700BBF68E /* UIButton+SCAddition.m in Sources */,
+				0D472ADA22D181740068C1DB /* SCClanPastWarsClan.swift in Sources */,
 				0D2CCB4722CEC55300668A1F /* SCTournamentPlayerCell.swift in Sources */,
 				0DE8D42222D0548A00797B3C /* SCClanDetailsInfoView.swift in Sources */,
 				0D5B48E722CC855000BBF68E /* SCCardsCollectionViewCell.swift in Sources */,
 				0DD0B52E22CDE8E00099546C /* SCTournamentMember.swift in Sources */,
 				0DD0B52122CDB9890099546C /* SCTournamentsGameMode.swift in Sources */,
 				0DD0B51222CD93300099546C /* SCTournamentsDisplayView.swift in Sources */,
+				0D472AC122D151040068C1DB /* SCClanMemberListController.swift in Sources */,
 				0DD0B51A22CDB65B0099546C /* SCTournamentsViewModel.swift in Sources */,
 				0D5B48A122CC658700BBF68E /* UIApplication+extension.swift in Sources */,
 				0DE8D41522D0240300797B3C /* SCClanLocation.swift in Sources */,
 				0D5B48ED22CC8DB100BBF68E /* SCCardsUrlItem.swift in Sources */,
+				0D472AC522D156680068C1DB /* SCClanDetailsInfoController.swift in Sources */,
 				0D2CCB5822CEDFE200668A1F /* SCPlayerCardsViewController.swift in Sources */,
 				0D5B48AF22CC658700BBF68E /* WKWebView+extension.swift in Sources */,
+				0D472AED22D1CC6B0068C1DB /* SCClanWarData.swift in Sources */,
 				0D5B489422CC658700BBF68E /* FFLabel.swift in Sources */,
 				0D5B489B22CC658700BBF68E /* UILabel+SCAddition.m in Sources */,
 				0D5B489F22CC658700BBF68E /* SCNetworkManager+extension.swift in Sources */,
@@ -1022,22 +1116,26 @@
 				0D5B48DE22CC7DC900BBF68E /* SCCardsDisplayView.swift in Sources */,
 				0D5B48E422CC837B00BBF68E /* SCCardsFlowLayout.swift in Sources */,
 				0DD0B52622CDD8FA0099546C /* SCTournamentsDetailsController.swift in Sources */,
+				0D472AD422D17E210068C1DB /* SCClanPastWarsItem.swift in Sources */,
 				0D5B48AD22CC658700BBF68E /* String+extension.swift in Sources */,
 				0DD0B53122CDE9920099546C /* SCTournamentClan.swift in Sources */,
 				0D5B489322CC658700BBF68E /* SCCardsViewModel.swift in Sources */,
 				0D2CCB6C22CF1DA000668A1F /* SCPlayerAchievementsController.swift in Sources */,
 				0D2CCB7F22CF383300668A1F /* SCPlayerChestData.swift in Sources */,
+				0D472AE022D1AF440068C1DB /* SCClanPastWarsParticipantsView.swift in Sources */,
 				0D5B48EA22CC8D1700BBF68E /* SCCardsDataItem.swift in Sources */,
 				0D5B489C22CC658700BBF68E /* UIColor+SCAddition.m in Sources */,
 				0D2CCB7D22CF37DF00668A1F /* SCPlayerChest.swift in Sources */,
 				0D5B48C222CC658700BBF68E /* SCNavigationViewController.swift in Sources */,
 				0D5B48B922CC658700BBF68E /* SCMoreViewController.swift in Sources */,
 				0D5B48A222CC658700BBF68E /* UIImageView+extension.swift in Sources */,
+				0D472AD622D17EB00068C1DB /* SCClanPastWarsParticipant.swift in Sources */,
 				0D5B48EF22CC8E6500BBF68E /* SCCardsData.swift in Sources */,
 				0D5B48C322CC658700BBF68E /* SCMainViewController.swift in Sources */,
 				0D5B48C922CC6E9B00BBF68E /* SCNewsViewController.swift in Sources */,
 				0D5B481622CC652B00BBF68E /* AppDelegate.swift in Sources */,
 				0D5B489A22CC658700BBF68E /* CABasicAnimation+SCAddition.m in Sources */,
+				0D472AD222D17DF40068C1DB /* SCClanPastWarsData.swift in Sources */,
 				0DD0B52C22CDE8990099546C /* SCTournamentsDetailsData.swift in Sources */,
 				0D5B48B222CC658700BBF68E /* UITableView+extension.swift in Sources */,
 				0D2CCB5C22CEE02500668A1F /* SCPlayerDeckViewController.swift in Sources */,
@@ -1045,24 +1143,29 @@
 				0D5B48C022CC658700BBF68E /* SCTournamentsViewController.swift in Sources */,
 				0D5B48B122CC658700BBF68E /* UIBarButtonItem+extension.swift in Sources */,
 				0DE8D41722D0252100797B3C /* SCClanMember.swift in Sources */,
+				0D472AE422D1B3920068C1DB /* SCClanPastWarsParticipantsCell.swift in Sources */,
 				0D2CCB6922CEFE5A00668A1F /* SCPlayerAchievement.swift in Sources */,
 				0D2CCB6322CEFC7300668A1F /* SCPlayerData.swift in Sources */,
 				0D5B48AC22CC658700BBF68E /* UIViewController+extension.swift in Sources */,
 				0DD0B50B22CD6DD20099546C /* SCCardsMaskView.swift in Sources */,
+				0D472ACA22D174590068C1DB /* SCClanPastWarsViewController.swift in Sources */,
 				0D5B48A522CC658700BBF68E /* Date+extension.swift in Sources */,
 				0D5B48A922CC658700BBF68E /* UINavigationController+extension.swift in Sources */,
 				0D2CCB7922CF357D00668A1F /* SCPlayerChestCell.swift in Sources */,
 				0D2CCB7522CF2B6100668A1F /* SCPlayerChestView.swift in Sources */,
 				0D5B489822CC658700BBF68E /* NSString+SCAddition.m in Sources */,
 				0DD0B52322CDC2670099546C /* TimeInterval+extension.swift in Sources */,
+				0D472AD822D17F610068C1DB /* SCClanPastWarsStanding.swift in Sources */,
 				0D5B489622CC658700BBF68E /* NSObject+SCAddition.m in Sources */,
 				0DE8D41D22D0308B00797B3C /* SCClanMemberListCell.swift in Sources */,
 				0D5B48AA22CC658700BBF68E /* Bundle+extension.swift in Sources */,
 				0D5B48A622CC658700BBF68E /* UILabel+extension.swift in Sources */,
+				0D472ACE22D176C40068C1DB /* SCClanPastWarsCell.swift in Sources */,
 				0D5B489922CC658700BBF68E /* UIScreen+UISCreen_extenshion.m in Sources */,
 				0D5B48A322CC658700BBF68E /* UIFont+extension.swift in Sources */,
 				0DE8D41922D0294F00797B3C /* SCBaseViewModel.swift in Sources */,
 				0D2CCB5422CEDFA900668A1F /* SCPlayerStatsViewController.swift in Sources */,
+				0D472AE922D1C7640068C1DB /* SCClanWarController.swift in Sources */,
 				0DD0B51D22CDB8570099546C /* SCTournamentsData.swift in Sources */,
 				0D5B48B022CC658700BBF68E /* UIPageControl+extension.swift in Sources */,
 				0D5B48A422CC658700BBF68E /* UIWindow+extension.swift in Sources */,
@@ -1074,6 +1177,7 @@
 				0D5B489D22CC658700BBF68E /* SCNetworkManager.swift in Sources */,
 				0DE8D41222D0236700797B3C /* SCClanData.swift in Sources */,
 				0D2CCB6722CEFDEA00668A1F /* SCPlayerBadge.swift in Sources */,
+				0D472ADC22D188640068C1DB /* SCClanPastWarsStandingCell.swift in Sources */,
 				0D5B489722CC658700BBF68E /* UIImageView+SCAddition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

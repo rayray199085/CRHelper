@@ -77,3 +77,23 @@ extension SCNetworkManager{
         }
     }
 }
+extension SCNetworkManager{
+    func getClanPastWarsData(tag: String, completion:@escaping (_ dict: [String: Any]?,_ isSuccess: Bool)->()){
+        let urlString = "https://api.clashroyale.com/v1/clans/\((tag as NSString).replacingOccurrences(of: "#", with: "%23"))/warlog"
+        let params = ["authorization": "Bearer \(HelperCommon.apiKey)"]
+        request(urlString: urlString, method: HTTPMethod.get, params: params) { (res, isSuccess, _, _) in
+            let dict = res as? [String: Any]
+            completion(dict, isSuccess)
+        }
+    }
+}
+extension SCNetworkManager{
+    func getClanWarsData(tag: String, completion:@escaping (_ dict: [String: Any]?,_ isSuccess: Bool)->()){
+        let urlString = "https://api.clashroyale.com/v1/clans/\((tag as NSString).replacingOccurrences(of: "#", with: "%23"))/currentwar"
+        let params = ["authorization": "Bearer \(HelperCommon.apiKey)"]
+        request(urlString: urlString, method: HTTPMethod.get, params: params) { (res, isSuccess, _, _) in
+            let dict = res as? [String: Any]
+            completion(dict, isSuccess)
+        }
+    }
+}
