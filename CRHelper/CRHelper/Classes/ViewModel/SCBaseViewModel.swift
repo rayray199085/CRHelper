@@ -141,8 +141,16 @@ extension SCBaseViewModel{
                 }
                 member.lastSeenString = date.sinaDateStringDescription
             }
-            self.clanData = clanData
-            completion(true)
+            guard let badgeId = clanData.badgeId else{
+                self.clanData = clanData
+                completion(true)
+                return
+            }
+            SCNetworkManager.shared.getClanBadgeImage(badgeId: badgeId, completion: { (image) in
+                clanData.badgeImage = image
+                self.clanData = clanData
+                completion(true)
+            })
         }
     }
 }
@@ -168,6 +176,7 @@ extension SCBaseViewModel{
                     continue
                 }
                 item.createdDateString = date.sinaDateStringDescription
+                item.participants?.sort(by: { $0.cardsEarned > $1.cardsEarned })
                 
                 var participantRank = 1
                 for participant in item.participants ?? [] {
@@ -210,22 +219,26 @@ extension SCBaseViewModel{
             }
             if let dateString = dateString,
                let date = self.dateFormatter.date(from: dateString){
-                print(date)
                 let remainingTimeInterval = date.timeIntervalSinceNow
                 warData.endTimeString = remainingTimeInterval.stringTime
             }
-            var position = -1
+            var positions = [Int]()
             if let state = warData.state {
                 for (index,c) in state.enumerated(){
                     if c.isUppercase{
-                        position = index
-                        break
+                        positions.append(index)
                     }
                 }
-                if position != -1{
-                    let leftSub = (state as NSString).substring(with: NSRange(location: 0, length: position))
-                    let rightSub = (state as NSString).substring(from: position)
-                    warData.state = "\(leftSub) \(rightSub)"
+                if positions.count > 0{
+                    var subs = ""
+                    var previousPos = 0
+                    for position in positions{
+                        subs += " \((state as NSString).substring(with: NSRange(location: previousPos, length: position - previousPos)))"
+                        previousPos = position
+                    }
+                    subs += " \((state as NSString).substring(from: previousPos))"
+                    subs.removeFirst()
+                    warData.state = subs
                 }
             }
             warData.state?.capitalizeFirstLetter()

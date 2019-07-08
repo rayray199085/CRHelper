@@ -14,6 +14,7 @@ class SCClanData: NSObject {
     @objc var type: String?
     @objc var desc: String?
     @objc var badgeId: String?
+    @objc var badgeImage: UIImage?
     @objc var clanScore: Int = 0
     @objc var location: SCClanLocation?
     @objc var clanWarTrophies: Int = 0

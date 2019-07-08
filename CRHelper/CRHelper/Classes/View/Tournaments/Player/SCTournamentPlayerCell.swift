@@ -19,7 +19,7 @@ class SCTournamentPlayerCell: UITableViewCell {
             playerLabel.text = member?.name
             trophiesLabel.text = "\(member?.score ?? 0)"
             clanButton.setTitle(member?.clan?.name, for: [])
-            rankLabel.text = "\(member?.rank ?? 1)"
+            rankLabel.text = "#\(member?.rank ?? 1)"
         }
     }
     

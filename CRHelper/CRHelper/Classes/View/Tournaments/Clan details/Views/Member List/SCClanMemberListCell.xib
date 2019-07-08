@@ -8,11 +8,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="JandaManateeBubble.ttf">
-            <string>JandaManateeBubble</string>
-        </array>
-    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -53,10 +48,10 @@
                         <color key="textColor" red="0.41713827850000001" green="0.622612834" blue="0.94908612969999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clan Rank:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kjl-rf-z5E">
-                        <rect key="frame" x="319" y="7" width="79" height="18"/>
-                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                        <color key="textColor" red="0.41713827850000001" green="0.622612834" blue="0.94908612969999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kjl-rf-z5E">
+                        <rect key="frame" x="394.5" y="3" width="9.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donation:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQO-c7-6d2">
@@ -78,9 +73,9 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jwx-aj-JwX">
-                        <rect key="frame" x="401" y="3" width="10" height="26"/>
-                        <fontDescription key="fontDescription" name="JandaManateeBubble" family="Janda Manatee Bubble" pointSize="17"/>
-                        <color key="textColor" red="0.81514960530000002" green="0.39441591500000001" blue="0.80004328489999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <rect key="frame" x="404" y="3" width="7" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQg-1v-kUl">
@@ -138,6 +133,12 @@
                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOW-zM-4gj">
+                        <rect key="frame" x="373" y="24" width="38" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="bQg-1v-kUl" firstAttribute="centerY" secondItem="duy-1v-bWl" secondAttribute="centerY" id="0Xo-Ce-nLr"/>
@@ -161,6 +162,7 @@
                     <constraint firstItem="YQO-c7-6d2" firstAttribute="leading" secondItem="duy-1v-bWl" secondAttribute="leading" id="M8Q-PN-w0t"/>
                     <constraint firstItem="ROc-TK-3Zw" firstAttribute="leading" secondItem="duy-1v-bWl" secondAttribute="leading" id="MOu-yw-u5T"/>
                     <constraint firstItem="zWh-0o-jRh" firstAttribute="centerY" secondItem="YQO-c7-6d2" secondAttribute="centerY" id="MgT-hM-q1C"/>
+                    <constraint firstItem="FOW-zM-4gj" firstAttribute="centerY" secondItem="yFM-PK-yvg" secondAttribute="centerY" id="NnD-VL-PJR"/>
                     <constraint firstItem="Jwx-aj-JwX" firstAttribute="top" secondItem="Zk3-vk-Nb2" secondAttribute="top" constant="3" id="OjD-3V-kc9"/>
                     <constraint firstItem="hVn-iD-KkW" firstAttribute="leading" secondItem="ROc-TK-3Zw" secondAttribute="trailing" constant="3" id="PPj-Yp-0EX"/>
                     <constraint firstItem="ik3-vf-5Ag" firstAttribute="top" secondItem="duy-1v-bWl" secondAttribute="bottom" constant="3" id="ZTQ-NZ-1hc"/>
@@ -169,6 +171,7 @@
                     <constraint firstItem="YQO-c7-6d2" firstAttribute="top" secondItem="mQt-1V-fmT" secondAttribute="bottom" constant="3" id="d0S-Mq-qa4"/>
                     <constraint firstItem="zWh-0o-jRh" firstAttribute="leading" secondItem="YQO-c7-6d2" secondAttribute="trailing" constant="3" id="dUI-Yl-T8Z"/>
                     <constraint firstItem="duy-1v-bWl" firstAttribute="leading" secondItem="Zk3-vk-Nb2" secondAttribute="leading" constant="3" id="div-BY-qc9"/>
+                    <constraint firstAttribute="trailing" secondItem="FOW-zM-4gj" secondAttribute="trailing" constant="3" id="ef5-Yx-8EO"/>
                     <constraint firstItem="Ko3-Ii-htW" firstAttribute="top" secondItem="ROc-TK-3Zw" secondAttribute="bottom" constant="3" id="iI9-81-vjv"/>
                     <constraint firstItem="wnK-Fm-O0X" firstAttribute="top" secondItem="ik3-vf-5Ag" secondAttribute="bottom" constant="3" id="iyg-f5-dQY"/>
                     <constraint firstItem="Fnj-0u-bxi" firstAttribute="leading" secondItem="Ko3-Ii-htW" secondAttribute="trailing" constant="3" id="nku-mp-cvj"/>
@@ -176,11 +179,12 @@
                     <constraint firstItem="wnK-Fm-O0X" firstAttribute="leading" secondItem="duy-1v-bWl" secondAttribute="leading" id="snq-v5-eYR"/>
                     <constraint firstItem="hVn-iD-KkW" firstAttribute="centerY" secondItem="ROc-TK-3Zw" secondAttribute="centerY" id="sxS-sk-iFd"/>
                     <constraint firstItem="pq3-yZ-4BM" firstAttribute="leading" secondItem="wnK-Fm-O0X" secondAttribute="trailing" constant="3" id="y1P-Vy-ygS"/>
-                    <constraint firstItem="Jwx-aj-JwX" firstAttribute="leading" secondItem="kjl-rf-z5E" secondAttribute="trailing" constant="3" id="yw5-T1-Mxs"/>
+                    <constraint firstItem="Jwx-aj-JwX" firstAttribute="leading" secondItem="kjl-rf-z5E" secondAttribute="trailing" id="yw5-T1-Mxs"/>
                     <constraint firstItem="pq3-yZ-4BM" firstAttribute="centerY" secondItem="wnK-Fm-O0X" secondAttribute="centerY" id="zB2-d8-Kp4"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="arenaLabel" destination="FOW-zM-4gj" id="gGy-b9-DcV"/>
                 <outlet property="clanChestPointsLabel" destination="Fnj-0u-bxi" id="BBD-eY-btH"/>
                 <outlet property="clanRankLabel" destination="Jwx-aj-JwX" id="on0-Uq-OBD"/>
                 <outlet property="donationLabel" destination="zWh-0o-jRh" id="0Td-xX-ueV"/>

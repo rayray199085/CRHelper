@@ -20,9 +20,11 @@ class SCClanMemberListCell: UITableViewCell {
             donationLabel.text = "\(member?.donations ?? 0)"
             donationReceivedLabel.text = "\(member?.donationsReceived ?? 0)"
             clanChestPointsLabel.text = "\(member?.clanChestPoints ?? 0)"
+            arenaLabel.text = member?.arena?.name
         }
     }
     
+    @IBOutlet weak var arenaLabel: UILabel!
     @IBOutlet weak var clanRankLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var lastSeenLabel: UILabel!

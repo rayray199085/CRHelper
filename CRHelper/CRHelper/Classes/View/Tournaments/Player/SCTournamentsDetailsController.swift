@@ -26,7 +26,7 @@ class SCTournamentsDetailsController: UIViewController {
         showPlayerInfo(tag: viewModel?.detailsData?.creatorTag)
     }
     
-    func showPlayerInfo(tag: String?){
+    private func showPlayerInfo(tag: String?){
         let vc = SCPlayerDetailsViewController()
         vc.title = tag
         vc.viewModel = viewModel
@@ -37,7 +37,7 @@ class SCTournamentsDetailsController: UIViewController {
         })
     }
     
-    func showClanInfo(tag: String?){
+    private func showClanInfo(tag: String?){
         let vc = SCClanDetailsViewController()
         vc.title = tag
         vc.viewModel = viewModel

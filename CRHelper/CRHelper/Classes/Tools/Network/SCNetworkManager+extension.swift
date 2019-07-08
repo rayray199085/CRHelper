@@ -28,6 +28,17 @@ extension SCNetworkManager{
             completion(image)
         }
     }
+    
+    func getClanBadgeImage(badgeId: String, completion:@escaping (_ image: UIImage?)->()){
+        let urlString = "https://cdn.statsroyale.com/images/badges/\(badgeId).png"
+        guard let url = URL(string: urlString) else{
+            completion(nil)
+            return
+        }
+        UIImage.downloadImage(url: url) { (image) in
+            completion(image)
+        }
+    }
 }
 extension SCNetworkManager{
     func getTournamentsData(name: String, completion:@escaping (_ dict: [String: Any]?,_ isSuccess: Bool)->()){
@@ -90,6 +101,39 @@ extension SCNetworkManager{
 extension SCNetworkManager{
     func getClanWarsData(tag: String, completion:@escaping (_ dict: [String: Any]?,_ isSuccess: Bool)->()){
         let urlString = "https://api.clashroyale.com/v1/clans/\((tag as NSString).replacingOccurrences(of: "#", with: "%23"))/currentwar"
+        let params = ["authorization": "Bearer \(HelperCommon.apiKey)"]
+        request(urlString: urlString, method: HTTPMethod.get, params: params) { (res, isSuccess, _, _) in
+            let dict = res as? [String: Any]
+            completion(dict, isSuccess)
+        }
+    }
+}
+
+extension SCNetworkManager{
+    func getLocationsList(completion:@escaping (_ dict: [String: Any]?,_ isSuccess: Bool)->()){
+        let urlString = "https://api.clashroyale.com/v1/locations"
+        let params = ["authorization": "Bearer \(HelperCommon.apiKey)"]
+        request(urlString: urlString, method: HTTPMethod.get, params: params) { (res, isSuccess, _, _) in
+            let dict = res as? [String: Any]
+            completion(dict, isSuccess)
+        }
+    }
+}
+
+extension SCNetworkManager{
+    func getLocationsClanRankings(id: String, completion:@escaping (_ dict: [String: Any]?,_ isSuccess: Bool)->()){
+        let urlString = "https://api.clashroyale.com/v1/locations/\(id)/rankings/clans"
+        let params = ["authorization": "Bearer \(HelperCommon.apiKey)"]
+        request(urlString: urlString, method: HTTPMethod.get, params: params) { (res, isSuccess, _, _) in
+            let dict = res as? [String: Any]
+            completion(dict, isSuccess)
+        }
+    }
+}
+
+extension SCNetworkManager{
+    func getLocationsPlayerRankings(id: String, completion:@escaping (_ dict: [String: Any]?,_ isSuccess: Bool)->()){
+        let urlString = "https://api.clashroyale.com/v1/locations/\(id)/rankings/players"
         let params = ["authorization": "Bearer \(HelperCommon.apiKey)"]
         request(urlString: urlString, method: HTTPMethod.get, params: params) { (res, isSuccess, _, _) in
             let dict = res as? [String: Any]

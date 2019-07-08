@@ -24,8 +24,10 @@ class SCClanDetailsInfoView: UIView {
             clanChestLevelLabel.text = "\(viewModel?.clanData?.clanChestLevel ?? 0)"
             clanChestMaxLevelLabel.text = "\(viewModel?.clanData?.clanChestMaxLevel ?? 0)"
             descriptionTextView.text = viewModel?.clanData?.desc
+            badgeImageView.image = viewModel?.clanData?.badgeImage
         }
     }
+    @IBOutlet weak var badgeImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var typeLabel: UILabel!

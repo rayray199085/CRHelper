@@ -7,24 +7,40 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class SCLocationsViewController: UIViewController {
-
+    private let locationsListView = SCLocationsListView.listView()
+    private let viewModel = SCLocationsViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setupUI()
+        loadData()
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+}
+extension SCLocationsViewController{
+    func setupUI(){
+        view.addSubview(locationsListView)
+        locationsListView.viewModel = viewModel
+        locationsListView.delegate = self
     }
-    */
-
+    func loadData(){
+        SVProgressHUD.show()
+        viewModel.loadLocationsList { [weak self](isSuccess) in
+            self?.locationsListView.tableView.reloadData()
+            if let nameList = self?.viewModel.locationsNameList {
+                self?.locationsListView.sctbindex.setView(nameList)
+            }
+            SVProgressHUD.dismiss()
+        }
+    }
+}
+extension SCLocationsViewController: SCLocationsListViewDelegate{
+    func didSelectRow(view: SCLocationsListView, locationId: String?) {
+        let vc = SCLocationsRankingsController()
+        viewModel.locationId = locationId
+        vc.viewModel = viewModel
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }
