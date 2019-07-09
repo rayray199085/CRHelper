@@ -53,7 +53,6 @@
 		0D472AED22D1CC6B0068C1DB /* SCClanWarData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D472AEC22D1CC6B0068C1DB /* SCClanWarData.swift */; };
 		0D5B481622CC652B00BBF68E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5B481522CC652B00BBF68E /* AppDelegate.swift */; };
 		0D5B481D22CC652D00BBF68E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D5B481C22CC652D00BBF68E /* Assets.xcassets */; };
-		0D5B482022CC652D00BBF68E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D5B481E22CC652D00BBF68E /* LaunchScreen.storyboard */; };
 		0D5B482B22CC652D00BBF68E /* CRHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5B482A22CC652D00BBF68E /* CRHelperTests.swift */; };
 		0D5B483622CC652D00BBF68E /* CRHelperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5B483522CC652D00BBF68E /* CRHelperUITests.swift */; };
 		0D5B489322CC658700BBF68E /* SCCardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5B484622CC658700BBF68E /* SCCardsViewModel.swift */; };
@@ -222,7 +221,6 @@
 		0D5B481222CC652B00BBF68E /* CRHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CRHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D5B481522CC652B00BBF68E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D5B481C22CC652D00BBF68E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0D5B481F22CC652D00BBF68E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D5B482122CC652D00BBF68E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D5B482622CC652D00BBF68E /* CRHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CRHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D5B482A22CC652D00BBF68E /* CRHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRHelperTests.swift; sourceTree = "<group>"; };
@@ -535,7 +533,6 @@
 			children = (
 				0D5B481522CC652B00BBF68E /* AppDelegate.swift */,
 				0D5B481C22CC652D00BBF68E /* Assets.xcassets */,
-				0D5B481E22CC652D00BBF68E /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -1072,7 +1069,6 @@
 				0DD0B51822CDB4220099546C /* SCTournamentTableViewCell.xib in Resources */,
 				0D2CCB6022CEE30C00668A1F /* SCPlayerStatsViewController.storyboard in Resources */,
 				0DD0B50D22CD6DDF0099546C /* SCCardsMaskView.xib in Resources */,
-				0D5B482022CC652D00BBF68E /* LaunchScreen.storyboard in Resources */,
 				0D5B481D22CC652D00BBF68E /* Assets.xcassets in Resources */,
 				0D5B48E822CC855000BBF68E /* SCCardsCollectionViewCell.xib in Resources */,
 				0D9F4DA122D2FDBA00CD641E /* SCLocationsPlayerRankingsCell.xib in Resources */,
@@ -1333,17 +1329,6 @@
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		0D5B481E22CC652D00BBF68E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0D5B481F22CC652D00BBF68E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		0D5B483822CC652D00BBF68E /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1466,7 +1451,9 @@
 			baseConfigurationReference = 1FF697AEB4D3A85951E9501E /* Pods-CRHelper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Rui Cao (3CB5U428B8)";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 3CB5U428B8;
 				INFOPLIST_FILE = CRHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1475,6 +1462,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.stephencao.project.CRHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = CRHelper;
 				SWIFT_OBJC_BRIDGING_HEADER = "CRHelper/Helper-Bridge.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1486,7 +1474,9 @@
 			baseConfigurationReference = 2C64D0AB3E22C5F923EC0913 /* Pods-CRHelper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Rui Cao (3CB5U428B8)";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 3CB5U428B8;
 				INFOPLIST_FILE = CRHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1495,6 +1485,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.stephencao.project.CRHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = CRHelper;
 				SWIFT_OBJC_BRIDGING_HEADER = "CRHelper/Helper-Bridge.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
